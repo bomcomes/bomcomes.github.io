@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+     <!-- .content -->
+    <div style="display:block; position: absolute;top:50%;width:99%;transform: translateY(-65%)">
+      <div style="text-align:center;"><img src="bomcalendar/img/bomcalendar_with_bi_eng.png" width="133" height="25">
+		<div>
+        <span style="text-align:center;font-size: 1.5em; color: #333; font-weight: bold; margin-top:16px; display: block;">소중한 사람이 당신과 몸 상태, 기분을<br>
+          공유하고 싶어 합니다.</span>
+      </div>
+      <div style="text-align:center; margin-top:80px"> <img src="bomcalendar/img/img_with_invite.png" width="174" height="108" alt=""/>
+        <span style="text-align:center;font-size:1em; color: #666666; font-weight: normal; margin-top:16px; display: block;">친구 초대를 수락하시려면<br>
+모바일 기기에서 Link를 사용해 주세요.</span>
+      </div>
+	</div>	  
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+  <!-- //.footer -->
+  <div style="text-align:center; position: absolute; width:100%; bottom:18px; left:50%;transform: translate(-50%,0); font-size:0.9em; color: #9CA5B5; font-weight: normal;">©bomcomes All rights reserved.</div>
+</div>
+<!-- //.wrap --> 
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('screen_webview_privacy');
+  }
+</script>
+</body>
+</html>
