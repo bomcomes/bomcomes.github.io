@@ -315,7 +315,7 @@ select {
   color: #FFFFFF;
   font-weight: 600;
 }
-.fullimg {width: 100%; height: auto;}
+.fullimg img {width: 100%; height: auto;}
 @media screen and (max-width: 320px) {
   .event-wrap .event-list .event-box .img-box .img-desc .title {
     width: 99%;
