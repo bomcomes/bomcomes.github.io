@@ -316,6 +316,59 @@ select {
   font-weight: 600;
 }
 .fullimg img {width: 100%; height: auto;}
+
+/* 백업하기 가이드 관련 : Start */
+.guideWrap {
+	max-width:335px;
+	margin:40px auto;
+}
+
+.guideWrap .top {
+	display:flex;
+	flex-direction: row;
+}
+.guideWrap li {padding-bottom: 50px;}
+.guideWrap .top .num {
+	color: #544EF2;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52px;
+}
+.guideWrap .textBox {
+	margin : 0 0 16px 12px;
+}
+.guideWrap .textBox .title {
+	color: #544EF2;
+	font-size: 20px;
+	line-height: 28px;
+}
+.guideWrap .textBox .subtitle{
+	margin-top:3px;
+	font-size: 14px;
+    line-height: 20px;
+	color:#333;
+}
+.guideWrap .textBox .subtitle.center{
+	text-align: center;
+}
+.guideWrap .image {
+	position:relative;
+	text-align: center;
+}
+
+.guideWrap .arrow_down{
+	margin: 30px 0 30px 0;
+	display:block;
+	position: relative;
+	left:50%;
+	width:18px;
+	height: 18px;
+	background-image:url("../en/img/guide/icon_arrow_down_purple_18.png");
+	background-repeat: no-repeat;
+	background-size: 18px;
+	background-position: center;
+}
+/* 백업하기 가이드 관련 : End */
 @media screen and (max-width: 320px) {
   .event-wrap .event-list .event-box .img-box .img-desc .title {
     width: 99%;

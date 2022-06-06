@@ -295,8 +295,9 @@ select {
   font-weight: 600;
 }
 .fullimg img {width: 100%; height: auto;}
+/* 백업하기 가이드 관련 : Start */
 .guideWrap {
-	max-width:360px;
+	max-width:335px;
 	margin:40px auto;
 }
 
@@ -304,7 +305,7 @@ select {
 	display:flex;
 	flex-direction: row;
 }
-.guideWrap li {margin-bottom: 50px;}
+.guideWrap li {padding-bottom: 50px;}
 .guideWrap .top .num {
 	color: #544EF2;
 	font-weight: 700;
@@ -340,11 +341,12 @@ select {
 	left:50%;
 	width:18px;
 	height: 18px;
-	background-image:url("../en/images/guide/icon_arrow_down_purple_18.png");
+	background-image:url("../en/img/guide/icon_arrow_down_purple_18.png");
 	background-repeat: no-repeat;
 	background-size: 18px;
 	background-position: center;
 }
+/* 백업하기 가이드 관련 : End */
 
 @media screen and (max-width: 320px) {
   .event-wrap .event-list .event-box .img-box .img-desc .title {
