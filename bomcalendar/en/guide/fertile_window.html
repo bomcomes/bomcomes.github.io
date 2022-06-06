@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="../../css/style_en.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <div class="guideWrap">
+		<div class="image">
+			<img src="../img/guide/webtoon/webtoon_ovulation_en.jpg" alt="이미지" width="330" height="auto">
+		</div>
+    </div>
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+</div>
+<!-- //.wrap --> 
+
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('screen_webview_event');
+  }
+</script>
+</body>
+</html>
 
