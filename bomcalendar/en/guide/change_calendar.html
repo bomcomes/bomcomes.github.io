@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <ol class="guideWrap">
+        <!-- Step1 -->
+        <li>
+          <div class="top"> <span class="num">1</span>
+            <div class="textBox">
+              <p class="title">공유코드 입력을 완료하셨나요?</p>
+              <p class="subtitle">받은 연결 리스트에 나에게 달력을 공유하는 친구가 추가됩니다.</p>
+            </div>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change1.png" alt="이미지" width="302" height="auto"></div>
+        </li>
+        <!-- Step2 -->
+        <li>
+          <div class="top"> <span class="num">2</span>
+            <div class="textBox">
+              <p class="title">‘사이드 메뉴’를 선택해 주세요.</p>
+              <p class="subtitle">사이드 메뉴 버튼은 달력 하단 왼쪽에 있습니다.</p>
+            </div>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change2.png" alt="이미지" width="292" height="auto"></div>
+        </li>
+        <!-- Step3 -->
+        <li>
+          <div class="top"> <span class="num">3</span>
+            <div class="textBox">
+              <p class="title">‘달력 선택’ 버튼 선택해 주세요.</p>
+              <p class="subtitle">달력 선택 버튼은 사이드 메뉴 상단의 프로필 우측에 있습니다.</p>
+            </div>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change3_1.png" alt="이미지" width="295" height="auto"></div>
+          <div class="arrow_down"></div>
+          <div class="textBox">
+            <p class="subtitle center">달력 선택 팝업이 노출됩니다.&nbsp; 친구 달력 리스트에서 달력을 보고 싶은 친구를 선택해 주세요.</p>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change3_2.png" alt="이미지" width="292" height="auto"></div>
+          <div class="arrow_down"></div>
+          <div class="textBox">
+            <p class="subtitle center">친구 달력으로 변경이 완료됐습니다.</p>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change3_3.png" alt="이미지" width="295" height="auto"></div>
+        </li>
+        <!-- Step4 -->
+        <li>
+          <div class="top"><span class="num">4</span>
+            <div class="textBox">
+              <p class="title">'내 달력'으로 변경하려면?</p>
+              <p class="subtitle">친구 달력 모드 이용 중에는 하단 (+) 버튼 위치에 친구의 프로필이 표시됩니다.</p>
+            </div>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change4_1.png" alt="이미지" width="295" height="auto"></div>
+          <div class="arrow_down"></div>
+          <div class="textBox">
+            <p class="subtitle center">친구 프로필 버튼을 선택해서 다시 내 달력으로 변경할 수 있습니다.</p>
+          </div>
+          <div class="image"><img src="../img/guide/calendar_change/screen_menual_calendar_change4_2.png" alt="이미지" width="292" height="auto"></div>
+        </li>
+      </ol>
+    </div>
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+</div>
+<!-- //.wrap --> 
+
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('scr_guide_change_calendar');
+  }
+</script>
+</body>
+</html>
