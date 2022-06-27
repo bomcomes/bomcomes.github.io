@@ -249,7 +249,7 @@ select {
   font-weight: 700;
   line-height: 1.38;
   color: #000;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 .agree-wrap h3 {
   font-size: 14px;
@@ -285,6 +285,9 @@ select {
   color: #000000;
   box-sizing: border-box;
   border: 1px solid #000;
+}
+.agree-wrap .mrt6 {
+  margin-top: 6px;
 }
 .agree-wrap .mrt10 {
   margin-top: 10px;
