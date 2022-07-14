@@ -348,6 +348,21 @@ select {
 }
 /* 백업하기 가이드 관련 : End */
 
+.Privacy ul {
+	display: block;
+	padding: 16px 0 0 16px;}
+
+.Privacy li { line-height: 20px;
+	font-size: 13px;
+  list-style-type : circle;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+
+
 @media screen and (max-width: 320px) {
   .event-wrap .event-list .event-box .img-box .img-desc .title {
     width: 99%;
