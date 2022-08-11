@@ -7,7 +7,6 @@
 <title>bomcoms</title>
 <link rel="stylesheet" href="../../css/style_en.css">
 </head>
-
 <body>
 <!-- .wrap -->
 <div class="wrap"> 
@@ -16,27 +15,23 @@
     <!-- .content -->
     <div class="content" id="content">
       <div class="guideWrap">
-		<div class="image">
-			<img src="../img/guide/webtoon/webtoon_pill_en.jpg" alt="이미지" width="330" height="auto">
-		</div>
+        <div class="image"><img src="../img/guide/webtoon/webtoon_pill_en.jpg" alt="이미지" width="330" height="auto"></div>
+      </div>
+      <!-- //.content --> 
     </div>
-    <!-- //.content --> 
+    <!-- //.container --> 
   </div>
-  <!-- //.container --> 
+  <!-- //.wrap --> 
 </div>
-<!-- //.wrap --> 
-
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
   function eventClick(title, target, name){
     logEvent(name);
     openNewWebViewWithPath(title,target);
   }
-		
   window.onload = function(){
-    screenEvent('screen_webview_event');
+    screenEvent('scr_webtoon_take_pill');
   }
 </script>
 </body>
 </html>
-

@@ -313,7 +313,25 @@ select {
   font-weight: 600;
   font-size: 1.6rem;
 }
+
+.btn-round {
+  display: block;
+  background-color: #544EF2;
+  text-align: center;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 16px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
 .btn-view a, a:active, a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.btn-round a, a:active, a:hover {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 600;
@@ -360,11 +378,12 @@ select {
 	text-align: center;
 }
 .textBox_caption{
-	width: 100%;
 	padding: 16px 18px 16px 18px;
 	background-color: #f8f8f8;
 	text-align: left;
 	margin-bottom: 33px;
+	line-height: 16px;
+	word-break: keep-all;
 }
 .guideWrap .textBox_caption .caption{
  color: #666666;
