@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="../../css/style_en.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <div class="textBox_caption">
+        <p class="caption">Excluding Bom Calendar from battery optimization will not have a significant impact on your battery efficiency since Bom Calendar uses a minimal amount of memory in the background for alerts only.</p>
+      </div>
+      <ol class="guideWrap">
+        <!-- Step1 -->
+        <li>
+          <div class="textBox">
+            <p class="subtitle center">How to Optimize Battery Usage: Tap 'Go To Android Settings' at the bottom of the screen and then tap 'Manage Battery Usage.'</p>
+          </div>
+          <div class="image"><img src="../img/guide/bettery/screen_battery_guide1_1.png" alt="이미지" width="284" height="75"></div>
+          <div class="arrow_down"></div>
+          <div class="image"><img src="../img/guide/bettery/screen_battery_guide1_2.png" alt="이미지" width="301" height="289"></div>
+          <div class="arrow_down"></div>
+          <div class="textBox">
+            <p class="subtitle center">Select 'App Not Optimized' at the top of the screen, then click 'Select All' from the menu.</p>
+          </div>
+          <div class="image"><img src="../img/guide/bettery/screen_battery_guide1_3.png" alt="이미지" width="302" height="283"></div>
+          <div class="arrow_down"></div>
+          <div class="textBox">
+            <p class="subtitle center">Find Bom Calendar on the list of apps and set the switch to OFF.</p>
+          </div>
+          <div class="image"><img src="../img/guide/bettery/screen_battery_guide1_4.png" alt="이미지" width="302" height="289"></div>
+        </li>
+      </ol>
+    </div>
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+</div>
+<!-- //.wrap --> 
+
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('scr_guide_battery');
+  }
+</script>
+</body>
+</html>
