@@ -258,6 +258,9 @@ select {
   color: #000;
   margin-top: 24px;
 }
+.agree-wrap .nomarin {
+  margin-top: 0px;
+}
 .agree-wrap .text01 {
   font-size: 13px;
   line-height: 1.46;
