@@ -340,6 +340,7 @@ select {
   font-weight: 600;
 }
 .fullimg img {width: 100%; height: auto;}
+.fullimg {font-size: 0;}
 
 /* 백업하기 가이드 관련 : Start */
 .guideWrap {

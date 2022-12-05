@@ -311,10 +311,10 @@ select {
   color: #FFFFFF;
   font-weight: 600;
 }
+.fullimg {font-size: 0;}
 .fullimg img {
   width: 100%;
-  height: auto;
-}
+  height: auto;}
 /* 백업하기 가이드 관련 : Start */
 .guideWrap {
   max-width: 335px;
