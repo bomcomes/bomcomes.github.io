@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <div class="agree-wrap"> 
+        <!-- 개인정보 수집 이용 동의 -->
+        <h2 class="nomarin">개인정보 수집ㆍ이용 동의</h2>
+        <div class="table-wrap mrt12">
+          <table class="table">
+            <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            </colgroup>
+            <thead>
+              <tr>
+                <td>수집 목적</td>
+                <td>수집 항목</td>
+                <td>보유 및 이용 기간</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>일반 회원가입</td>
+                <td>[필수] 아이디(이메일 정보), 비밀번호</td>
+                <td rowspan="3">회원 탈퇴 시 즉시 삭제</td>
+              </tr>
+              <tr>
+                <td>SNS 회원가입 (페이스북, 구글,애플)</td>
+                <td>[필수] <br>
+                  - 페이스북 로그인시 프로필 정보(이메일주소, 닉네임, 이름)<br>
+                  - 구글 로그인 시 프로필 정보(이메일주소, 닉네임, 이름) <br>
+                  - 애플 로그인 시 프로필 정보(이메일, 로그인 생성번호)</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>문의 및 개선의견, 오류 고객 지원</td>
+                <td>[필수] 이메일 주소</td>
+                <td>답변 종료 후 30일 이내 파기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+		  <p class="text01 mrt12">※개인정보 수집 및 이용에 대한 동의를 거부할 권리가 있으며, 동의 거부 시 회원가입이 제한됩니다.</p>
+      </div>
+	  <!-- //.content -->
+    </div>
+    <!-- //.container --> 
+  </div>
+</div>
+<!-- //.wrap --> 
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+  window.onload = function(){
+    screenEvent('scr_webview_privacy_summary');
+  }
+</script>
+</body>
+</html>
