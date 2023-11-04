@@ -1,683 +1,323 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>개인정보 처리방침</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="2d40008e-07d1-4c61-944f-8ec02c7f482f" class="page sans"><header><h1 class="page-title">개인정보 처리방침</h1><p class="page-description"></p></header><div class="page-body"><p id="1b0bc5c6-1b36-4bd1-b5a5-c39f5a3f731e" class="">봄컴즈 (이하 ‘회사’라 함)는 정보주체의 개인정보보호를 매우 중요시하며, 정보주체가 회사의 ‘봄 캘린더’ 서비스(이하 ‘서비스‘라 함)를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다.</p><p id="2b14820c-750c-4716-b018-d8a2400f3a59" class="">이에 회사는 「개인정보보호법」, 「통신비밀보호법」, 「전기통신사업법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 정보통신서비스제공자가 준수하여야 할 관련 법규 상의 개인정보보호 규정을 준수하고 있습니다.</p><p id="1fc6c402-9b0c-47b5-91df-e3ef556dc7d0" class="">회사는 개인정보처리방침을 통하여 정보주체가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.</p><p id="2f22d33d-557a-47d4-b99b-373d4923f5fc" class="">또한 개인 정보처리방침을 서비스 내 공지사항 및 이용약관 화면에 공개함으로써 정보주체가 언제나 용이하게 보실 수 있도록 조치하고 있습니다.</p><p id="ce955404-5b23-4f4a-b9f9-e349e05ffc02" class="">회사의 개인정보처리방침은 정부의 법률 및 지침 변경이나 회사의 내부 방침 변경 등으로 인하여 수시로 변경될 수 있고, 이에 따른 개인정보처리방침의 지속적인 개선을 위하여 필요한 절차를 정하고 있습니다.</p><p id="0420971a-7f83-4ac9-a196-276c49d3852d" class="">그리고 개인정보처리방침을 개정하는 경우 회사는 개인정보처리방침 변경 시행 7일전부터 사이트 공지사항을 통하여 공지하고 버전번호 및 개정일자 등을 부여하여 개정된 사항을 정보주체가 쉽게 알아볼 수 있도록 하고 있습니다.</p><h2 id="08c3a985-44bc-4ed9-b756-ee8d94c3070c" class=""><strong>01. 개인정보 수집에 대한 동의</strong></h2><p id="5a79ad80-e977-4618-9480-1838536ea76c" class="">회사는 정보주체가 회사의 개인정보처리방침 또는 개인정보 수집 동의, 이용약관의 내용에 대하여 「동의」버튼 또는 「취소」버튼을 클릭할 수 있는 절차 또는 체크박스 유무를 마련하여, 「동의」버튼 또는 체크박스 체크 시 개인정보 수집에 대해 동의한 것으로 봅니다.</p><h2 id="9f5c2e5e-58e9-4089-82e8-f8b4aed1db6e" class=""><strong>02. 개인정보의 수집목적 및 이용목적</strong></h2><p id="ab427c92-b400-4c42-87d0-5825f8d1b9f9" class="">&quot;개인정보&quot;라 함은 개인정보 보호법 제2조 제1호에 따라 살아 있는 개인에 관한 정보로서 성명, 주민등록번호 및 영상 등을 통하여 개인을 알아볼 수 있는 정보(해당 정보만으로는 특정 개인을 알아볼 수 없더라도 다른 정보와 쉽게 결합하여 알아볼 수 있는 것을 포함한다)를 말합니다. 회사는 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다.</p><p id="cdb49478-c2a8-4791-a94c-bc7d0ccff3be" class="">① 회원가입 의사 확인, 이용자 식별, 회원 탈퇴 의사 확인 등 회원 관리를 위해 활용</p><p id="ab70c5c0-945f-4fa7-900e-e4229f6899a5" class="">② 이용자와 약속한 서비스 제공, 서비스 제공에 따른 본인 인증, 문의사항 또는 불만 처리 및 회신, 공지사항 전달에 활용</p><p id="c02f1fbf-83d5-4ec0-89fa-22fb8573fbae" class="">③ 법령 및 이용약관을 위반하는 회원에 대한 이용 제한 조치, 부정 이용 행위를 포함하여 서비스의 원활한 운영에 지장을 주는 행위, 비인가 행위에 대한 방지 및 제재, 계정도용 방지, 분쟁 조정을 위한 기록보존 등 이용자 보호 및 안전한 서비스 운영에 활용</p><p id="cfa885c4-bb1c-4e4a-98f9-5bada2721c65" class="">④ 서비스 이용 성향, 관심, 이용기록 분석 등을 반영한 신규 서비스 개발 및 맞춤형 서비스 제공 등 서비스 개선에 활용</p><p id="5b256035-a6ec-442f-928d-761b1e350056" class="">⑤ 이벤트 정보 및 참여기회 제공, 광고성 정보 제공 등 마케팅 및 프로모션에 활용 위의 내용에 대한 동의를 거부할 수 있습니다. 다만, 이에 대한 동의를 하지 않을 경우에는 신규 서비스나 이벤트 및 프로모션에 대한 안내를 받지 못할 수 있음을 알려 드립니다.</p><h2 id="f525e7d9-4ea4-4f06-8572-b87bae7d393d" class=""><strong>03. 수집하는 개인정보 항목 및 수집방법</strong></h2><h3 id="2b2955b0-3e55-45c4-af01-e09fc9a6ff73" class=""><strong>가. 수집하는 개인정보의 항목</strong></h3><p id="26ce36f4-710e-4843-b765-13c1a09341a4" class="">① 회사는 회원가입, 서비스 이용, 원활한 고객상담 등 아래와 같은 개인정보를 수집하고 있습니다.</p><table id="99bbfc4d-f6ff-46e7-ba87-851d21bff5e1" class="simple-table"><thead class="simple-table-header"><tr id="623898bd-c709-4a5c-b261-8d61446ada48"><th id="ZtFS" class="simple-table-header-color simple-table-header">서비스</th><th id="m_A{" class="simple-table-header-color simple-table-header">수집 항목</th><th id="Olv`" class="simple-table-header-color simple-table-header">보유 및 이용 기간</th></tr></thead><tbody><tr id="92927e65-ed0e-4b67-bf2a-f9f8c2d4816f"><td id="ZtFS" class="">일반 회원가입</td><td id="m_A{" class="">[필수] 아이디(이메일 정보), 비밀번호</td><td id="Olv`" class="">회원 탈퇴 시 즉시 삭제</td></tr><tr id="d8ff769d-5bf1-4cab-86a7-8de1be838882"><td id="ZtFS" class="">SNS 회원가입 (페이스북, 구글,애플)</td><td id="m_A{" class="">[필수]
-- 페이스북 로그인시 프로필 정보(이메일주소, 닉네임, 이름)
-- 구글 로그인 시 프로필 정보(이메일주소, 닉네임, 이름)
-- 애플 로그인 시 프로필 정보(이메일, 로그인 생성번호)</td><td id="Olv`" class="">회원 탈퇴 시 즉시 삭제</td></tr><tr id="c46b5449-e318-49c4-a5a7-507b7c565706"><td id="ZtFS" class="">달력, 생리주기, 몸무게</td><td id="m_A{" class="">[선택] 이용자가 입력한 데이터</td><td id="Olv`" class="">회원 탈퇴 시 즉시 삭제</td></tr><tr id="381c5c1f-c0d5-48da-90a5-baff9413b684"><td id="ZtFS" class="">이용자 식별, 나이, 성별 분석을 통한 서비스 개선</td><td id="m_A{" class="">[선택] 닉네임, 생년월일, 성별</td><td id="Olv`" class="">회원 탈퇴 시 즉시 삭제</td></tr><tr id="f288624d-8e82-45d3-9abf-40e878a872b8"><td id="ZtFS" class="">문의 및 개선의견, 오류 고객 지원</td><td id="m_A{" class="">[필수] 이메일 주소</td><td id="Olv`" class="">답변 종료 후 30일 이내 파기</td></tr></tbody></table><p id="334fb011-4f80-4c87-aa06-e86fdf9d2d0d" class="">② 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.ㆍ IP Address, 쿠키, 방문 일시, 서비스 이용 기록 (‘봄 캘린더’ 애플리케이션 버전 및 가입일, 기기정보 (ADID 및 IDFA 등 기기고유식별값, OS버전, 단말기 모델명 등)</p><p id="0f6c79b8-16c5-4573-bb9d-b9ce10b225ba" class="">③ 부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 아래와 같은 정보들이 수집될 수 있습니다.이벤트 응모는 ‘봄 캘린더’에서 운영하는 소셜미디어(인스타그램, 블로그 등)및 홈페이지, 앱 등을 통하여 진행하는 이벤트에 참여한 이용자를 의미합니다.ㆍ 성명, 휴대전화번호, 주소, 이메일 등 개인식별정보</p><p id="75ad348a-1718-4a8a-aeba-8d3c32e1dc69" class="">④ 수집경로에 따라 수집하는 항목이 추가되는 경우 수집하는 화면에서 별도로 고지하고 동의를 받습니다.</p><h3 id="455a9fb5-9288-44e7-b81d-72984bd03e6b" class=""><strong>나. 개인정보 수집방법</strong></h3><p id="c3d0ead1-4882-4864-8c36-9db9b5f29c89" class="">회사는 다음과 같은 방법으로 개인정보를 수집하며 정보 주체의 사전 동의 없이는 정보주체의 개인정보를 공개하지 않습니다.</p><p id="27289350-cae0-4a4c-8b81-ac882bc63cdc" class="">ㆍ ‘봄 캘린더’ 서비스 이용, 이벤트 응모 등</p><h2 id="c556c54d-a353-41b0-a4b0-601db398fbcc" class=""><strong>04. 수집하는 개인정보의 보유 및 이용기간</strong></h2><p id="84db5402-ec2b-44b5-a419-8aad438be9d4" class="">회사가 수집하는 개인정보의 보유 및 이용기간은 정보주체가 회사에서 제공하는 서비스를 이용하는 동안 회원 탈퇴를 요청하거나 개인정보의 수집·이용 등에 대한 동의를 철회할 때까지 보존합니다.다만, 아래의 &quot;06. 정보주체 자신의 개인정보 관리(열람, 정정, 삭제 등)에 관한 사항&quot; 에서 설명한 절차와 방법에 따라 회원 본인이 직접 삭제(탈퇴)를 요청한 경우에는 재생할 수 없는 방법에 의하여 디스크에서 완전히 삭제하며 추후 열람이나 이용이 불가능한 상태로 처리됩니다.그리고 &quot;03. 수집하는 개인정보 항목 및 수집방법&quot;에서와 같이 일시적인 목적 (설문조사, 이벤트, 본인확인 등)으로 입력 받은 개인정보는 그 목적이 달성된 이후에는 동일한 방법으로 사후 재생이 불가능한 상태로 처리됩니다.또한 「상법」, 「전자상거래 등에서의 소비자보호에 관한 법률」 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보 를 보관합니다.이 경우 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.</p><table id="67dde785-e618-4265-a0a4-6afb89ade1df" class="simple-table"><thead class="simple-table-header"><tr id="e90febca-2f33-470a-afdc-f6b2835a2cf1"><th id="}\l?" class="simple-table-header-color simple-table-header">보유목적</th><th id="qN`f" class="simple-table-header-color simple-table-header">보유항목  </th><th id="BbQa" class="simple-table-header-color simple-table-header">보유근거</th><th id="I]qj" class="simple-table-header-color simple-table-header">보유 및 이용 기간</th></tr></thead><tbody><tr id="d880f843-1374-40a3-94fd-45f3eebaefa4"><td id="}\l?" class="">통신사실확인 자료 제공</td><td id="qN`f" class="">로그기록, 접속지 정보 등</td><td id="BbQa" class="">「통신비밀보호법」</td><td id="I]qj" class="">3개월</td></tr><tr id="3a69661c-f878-4d05-9d36-2f3b852730d5"><td id="}\l?" class="">표시/광고에 관한 기록</td><td id="qN`f" class="">표시/광고에 관한 기록</td><td id="BbQa" class="">「전자상거래 등에서의 소비자 보호에 관한 법률」</td><td id="I]qj" class="">6개월</td></tr><tr id="617a8876-27c7-4d74-a123-5a1e8c84d9d4"><td id="}\l?" class="">대금결제 및 재화 등의 공급에 관한 기록</td><td id="qN`f" class="">대금결제 및 재화 등의 공급에 관한 기록</td><td id="BbQa" class="">「전자상거래 등에서의 소비자 보호에 관한 법률」</td><td id="I]qj" class="">5년</td></tr><tr id="283f29e6-aebb-415f-989e-732aca6bdfe0"><td id="}\l?" class="">계약 또는 청약 철회 등에 관한 기록</td><td id="qN`f" class="">소비자 식별정보 계약/청약철회 기록</td><td id="BbQa" class="">「전자상거래 등에서의 소비자 보호에 관한 법률」</td><td id="I]qj" class="">5년</td></tr><tr id="fb17b1ca-92ec-43d9-b948-0ddd25250bb2"><td id="}\l?" class="">소비자 불만 또는 분쟁처리에 관한 기록</td><td id="qN`f" class="">소비자 식별정보 분쟁처리 기록</td><td id="BbQa" class="">「전자상거래 등에서의 소비자 보호에 관한 법률」</td><td id="I]qj" class="">3년</td></tr></tbody></table><h2 id="4d609ea6-4e57-4cda-8a21-07cd0cfc589e" class=""><strong>05. 수집한 개인정보의 공유 및 제공</strong></h2><p id="b1e2d2c7-6022-4fec-ba28-8365868b2571" class="">회사는 정보주체가 개인정보를 &quot;02. 개인정보의 수집 및 이용목적&quot;에서 고지한 범위 내에서 사용하며, 정보주체의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 정보주체의 개인정보를 외부에 제공하지 않습니다.
-다만, 아래의 경우에는 예외로 합니다.</p><ul id="cf92fcc5-7aec-46e2-bfce-976729b395c3" class="bulleted-list"><li style="list-style-type:disc">회사의 서비스 제공에 따른 요금 정산을 위하여 필요한 경우</li></ul><ul id="aefb9e1c-54d0-4333-adf8-fad00d3ed27d" class="bulleted-list"><li style="list-style-type:disc">앱 또는 홈페이지에 게시한 서비스 이용 약관 및 기타 회원 서비스 등의 이용약관 또는 운영원칙을 위반한 경우</li></ul><ul id="23232469-77b2-48cd-82a4-2f5a91235a75" class="bulleted-list"><li style="list-style-type:disc">회사의 서비스를 이용하여 타인에게 정신적, 물질적 피해를 줌으로써 그에 대한 법적인 조치를취하기 위하여 개인정보를 제공해야 한다고 판단되는 충분한 근거가 있는 경우</li></ul><ul id="279c5103-7d64-445e-9c62-164401dde6fb" class="bulleted-list"><li style="list-style-type:disc">기타 법에 의해 요구된다고 선의로 판단되는 경우 (ex. 관련법에 의거 적법한 절차에 의한 정부/수사기관의 요청이 있는 경우 등)</li></ul><ul id="a9a74621-51c8-47a8-893b-be37b8152bc5" class="bulleted-list"><li style="list-style-type:disc">서비스 이용을 위해 이용자가 사전에 동의한 경우 </li></ul><table id="f9392e01-f135-44ec-b718-e95d2742d373" class="simple-table"><thead class="simple-table-header"><tr id="00eb7005-c381-44a5-b4a7-3503758735d8"><th id="MD^;" class="simple-table-header-color simple-table-header">제공받는자</th><th id="u=Ia" class="simple-table-header-color simple-table-header">제공목적</th><th id="uHx`" class="simple-table-header-color simple-table-header">제공항목</th><th id="W&lt;da" class="simple-table-header-color simple-table-header">보유 및 이용 기간</th></tr></thead><tbody><tr id="448d29ac-4cad-4593-b796-9ef2079f08ab"><td id="MD^;" class="">이용자가 지정한 공유 받는 자</td><td id="u=Ia" class="">봄 캘린더 기록 공유하기 제공</td><td id="uHx`" class="">생리주기 및 생리기간, 마지막 생리일, 생리예정일, 가임기 시작일/종료일, 임신확률, 생리양과 생리통 정도,약 먹음, 사랑한 날 그외 사용자가 직접 선택한 항목</td><td id="W&lt;da" class="">회원 탈퇴 시 까지 또는 서비스 정료 및 공유 끊기 선택시 까지
-</td></tr></tbody></table><h2 id="812e4b17-3b97-4ae2-b860-be5cd0e6da0f" class=""><strong>06. 정보주체 자신의 개인정보 관리(열람, 정정, 삭제 등)에 관한 사항</strong></h2><p id="357c9634-858b-43e2-ba61-0d959837fd43" class="">1. 정보주체는 회사에 대해 언제든지 다음의 개인정보 보호 관련 권리를 행사할 수 있습니다.</p><p id="76f89856-c11c-4d48-a17f-a3ea44e9be37" class="">① 개인정보 열람요구</p><p id="cce58c32-767f-4b8f-8a32-29aeb0516be9" class="">② 오류 등이 있을 경우 정정 요구</p><p id="300e1f08-a23e-4bf8-b9fc-fa8d26193632" class="">③ 삭제요구</p><p id="cac797ad-118f-40b1-a58b-95d442433093" class="">④ 처리정지 요구</p><p id="81683c87-e524-42e1-880f-42367b2d3630" class="">2. 제1항에 따른 권리 행사는 회사에 대해 서비스 내 고객센터 또는 이메일(help@bomcomes.com)을 통하여 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.</p><p id="f8c7e06a-81e9-4d82-9c2a-fd0677faaac0" class="">3. 정보주체가 개인정보의 오류 등에 대해 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지 않습니다.</p><p id="9f51bf86-c894-42ff-b5b6-328b03433b84" class="">4. 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</p><p id="5e7041f1-674f-40b0-b812-b4404aa3288a" class="">5. 정보주체는 개인정보 보호법 등 관계법령을 위반하여 회사가 처리하고 있는 정보주체 본인이나 타인의 개인정보 및 사생활을 침해하여서는 아니됩니다.</p><p id="0f3b96c4-66e5-45d0-a4c1-c511e7303779" class="">6. 정보주체는 언제든지 ‘회원탈퇴’ 등을 통해 개인정보의 수집 및 이용 동의를 철회할 수 있습니다.</p><h2 id="81018703-d409-4539-afe2-eaaf1210dbd4" class=""><strong>07. 개인정보 자동수집 장치의 설치·운영 및 그 거부에 관한 사항</strong></h2><h3 id="fc3abc1a-128a-428d-a431-0ed3ff9d9845" class=""><strong>가. 쿠키(cookie)의 운영에 관한 사항</strong></h3><p id="7330b099-c306-4fc9-9836-24d26d7a6f3f" class="">회사는 이용자들에게 특화된 맞춤서비스를 제공하기 위해서 이용자들의 정보를 저장하고 수시로 불러오는 &#x27;쿠키(cookie)&#x27;를 사용합니다.쿠키는 웹사이트를 운영하는데 이용되는 서버(HTTP)가 이용자의 컴퓨터 브라우 저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터 또는 스마트폰 내의 하드디스크에 저장되기도 합니다.이용자들이 홈페이지에 접속한 후 로그인하여 회원서비스 등의 서비스를 이용하기 위해서는 쿠키를 허용하셔 야 합니다.회사는 이용자들에게 적합하고 보다 유용한 서비스를 제공하기 위해서 쿠키를 이용하여 아이디에 대한 정보를 찾아냅니다.쿠키는 정보주체의 컴퓨터 또는 스마트폰 단말기의 속성은 식별하지만 정보주체자를 개인적으로 식별하지는 않습니다.1. 쿠키의 사용 목적이용자들이 방문한 회사가 제작한 사이트의 각 서비스와 웹 사이트들에 대한 방문 및 이용형태,보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위하여 사용합니다.2. 쿠키의 사용 설정이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 이용자는 웹 브라우저에서 옵션을설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있 습니다.쿠키 설정을 거부하는 방법으로는 이용자가 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.ㆍ 설정방법 예(인터넷 익스플로러의 경우) : 웹 브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보 다만, 쿠키의 저장을 거부할 경우에는 추후 로그인이 필요한 일부 서비스는 이용에 어려움이 있을 수 있습니다.</p><h3 id="8041d579-4e0d-40ef-918e-4016261b536a" class=""><strong>나. 고객 행동 및 마케팅 분석 운영에 대한 사항</strong></h3><p id="116acdd4-54cd-4ad3-bb51-fb20f41240ae" class="">회사는 사용자 행태 분석 서비스와 온라인 맞춤형 광고를 이용하고 있으며 해당 사업자가 개인식별정보 없이 서비스 이용행태정보를 수집하도록 허용하고 있습니다.
-‘봄 캘린더’ 앱은 이용자의 ADID/IDFA를 수집할 수 있습니다. ADID(Android OS)/IDFA(iOS)란 모바일앱 이용자의 광고 식별 값으로서, 사용자의 맞춤 서비스 제공이나 더 나은 환경의 광고를 제공하기 위한 측정을 위해 수집될 수 있습니다.</p><p id="7ead0f78-cd04-43db-baaf-fe0e2d69dd1b" class="">[거부방법]</p><p id="060b5941-412f-423e-acc0-9190520d4558" class="">Android : 설정 &gt; 구글(구글설정) &gt; 광고 &gt; 광고 맞춤설정 선택 해제 - iOS : 설정 &gt; 개인정보보호 &gt; Apple광고 &gt; 맞춤형 광고 선택 해제 사용자는 언제든지 이러한 맞춤형 광고 수신을 거부할 수 있으며, 이 경우 맞춤형 광고가 아닌 임의의 광고가 노출됩니다.</p><h2 id="2edaf08c-fe66-46b4-9a7a-422ee029540a" class=""><strong>08. 개인정보 파기 절차 및 방법</strong></h2><p id="d0ef9bad-d477-4512-8c97-3284895d52f4" class="">회사는 수집한 개인정보의 이용 목적이 달성된 후에는 보관 및 이용 기간에 따라 해당 정보를 바로 파기합니다. 다만 내부 방침에 의해 서비스 부정이용기록은 부정 가입 및 이용 방지를 위하여 회원 탈퇴 시점으로부터 최대 1년간 보관 후 파기하며, 관계법령에 의해 보관해야 하는 정보는 법령이 정한 기간 동안 보관한 후 파기합니다.파기 절차, 방법, 시점은 다음과 같습니다.</p><h3 id="e8b90e84-0c91-46e4-a049-eada8e51bf2a" class=""><strong>가. 파기절차</strong></h3><p id="d49a8fa2-87a2-49de-8bea-e3472f5e9eb4" class="">① 회원이 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 데이터베이스(DB)로 옮겨져 회사의 내부 방침과 관련 법령에 따른 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.</p><p id="9820da14-c109-4c27-b5f3-e3fa0344ae12" class="">② 별도의 데이터베이스(DB)로 옮겨진 개인정보는 법령에 따른 경우가 아니면 보유 목적 이외의 다른 용도로 이용되지 않습니다.</p><h3 id="08866f12-2266-4935-a118-3be69d0c5400" class=""><strong>나. 파기방법</strong></h3><p id="d06d8fca-eb43-43f4-b2df-548e44ad5be7" class="">① 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없게 하는 기술적 방법으로 삭제합니다.</p><p id="4a179e75-da89-4202-a883-f5e2526a8781" class="">② 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</p><h2 id="5b31546b-8d7f-4f69-a100-11eb34aae1fa" class="block-color-default">09<strong>. 장기 미이용 회원의 개인정보 분리 저장·관리</strong></h2><p id="00fa8cf5-a66a-41d5-85f2-0e430b7bf1fa" class="block-color-default">최근 1년 동안 서비스 이용기록이 없는 회원을 휴면회원으로 전환하고, 해당 회원의 개인정보를 분리하여 저장∙관리합니다.휴면회원 전환으로 개인정보가 분리 저장∙관리될 경우 모든 서비스 이용이 불가능하며, 다시 서비스를 이용하기 위해서는 서비스에서 본인인증 절차를 통해 휴면 해제 의사를 표시해야 합니다.휴면 전환일 1개월 전에 앱 푸시 알림, 이메일, 등을 통해 휴면 예정 회원 안내 메시지를 전달해드립니다.휴면 전환일 전까지 서비스를 다시 이용하실 경우 휴면회원 전환이 취소되니, 휴면회원 전환과 개인정보 분리 보관을 원치 않으시는 경우 서비스에 로그인하시면 됩니다.</p><ul id="546073ac-15e4-4a47-9962-c119909d9f2e" class="bulleted-list"><li style="list-style-type:disc">분리 저장·관리 대상 : 1년 동안 서비스 이용 기록이 없는 계정</li></ul><ul id="eba5cfc0-efb5-455f-b044-baf104a9e9d3" class="block-color-default bulleted-list"><li style="list-style-type:disc">휴면 전환일 : 서비스 이용 기록이 없이 1년이 도래하는 시점</li></ul><ul id="140dde7a-4d6a-44c2-b9fc-bc24ad68e481" class="block-color-default bulleted-list"><li style="list-style-type:disc">분리 저장·관리되는 개인정보의 항목 : 생리, 피임약 복용, 사랑한 날 ... 프로필 정보 (개인식별번호(CI/DI) 등은 제외)</li></ul><ul id="2331fbae-ccab-4c6d-960f-56090f5d4796" class="block-color-default bulleted-list"><li style="list-style-type:disc">삭제되는 개인정보의 항목 : 없음</li></ul><h2 id="df566323-8db3-47b3-a940-e87e37bde56d" class=""><strong>10. 개인정보 관련 기술적 및 관리적 보호 대책</strong></h2><p id="0b6ba42d-1c28-47c9-bd1e-201dc9ad8977" class="">회사는 이용자의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/관리적 대책을 강구하고 있습니다.</p><h2 id="40e79730-8f71-41d5-b9f6-f08dc551dfb2" class=""><strong>11. 개인정보의 위탁처리</strong></h2><p id="e87096d9-de01-4080-b243-e58cbc060495" class="">위탁처리 내용이 없습니다.</p><h2 id="9f5bc9b6-ccd5-4587-a434-09251a570006" class=""><strong>12. 개인정보관련 의견수렴 및 불만처리에 관한 사항</strong></h2><p id="a2540b77-98c8-4582-8072-73aaf6efcc1c" class="">회사는 개인정보보호와 관련하여 정보주체 여러분들의 의견을 수렴하고 있으며 불만을 처리하기 위하여 모든 절차와 방법을 마련하고 있습니다.정보주체들은 하단에 명시한 &quot;14. 회사 고객센터 안내&quot;항을 참고하여 전화나 메일을 통하여 불만사항을 신고할 수 있고, 회사는 정보주체들의 신고사항에 대하여 신속하고도 충분한 답변을 해 드릴 것입니다.&lt;아래의 기관은 회사와는 별개의 기관으로서, 회사의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 고객센터로 문의하여 주시기 바랍니다.&gt;</p><ul id="cf3454d8-f7c5-4a0d-92f4-a0089b1ec2ab" class="bulleted-list"><li style="list-style-type:disc">개인정보 분쟁조정위원회 : 1833-6972 (www.kopico.go.kr)</li></ul><ul id="1cf3fedc-e1a5-4223-8fc6-afca0bd81641" class="bulleted-list"><li style="list-style-type:disc">개인정보 침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)</li></ul><ul id="da82d49f-3734-43c7-8a34-15a0ed2c6473" class="bulleted-list"><li style="list-style-type:disc">대검찰청 사이버수사과 : (국번없이) 1301, privacy@spo.go.kr, (www.spo.go.kr)</li></ul><ul id="d48e009e-2f91-490a-b64e-b2d7c740df4b" class="bulleted-list"><li style="list-style-type:disc">경찰청 사이버안전국 : (국번없이) 182, (cyberbureau.police.go.kr)</li></ul><h2 id="53ec1cf0-86df-47b7-9346-8393699d8508" class=""><strong>13. 정보주체의 권리와 의무</strong></h2><p id="1b413748-cdf7-426f-9ad2-4fcebc04b889" class="">정보주체가 입력한 부정확한 정보로 인해 발생하는 사고의 책임은 자신에게 있으며 타인 정보의 도용 등 허위정보를 입력할 경우 회원자격이 상실될 수 있습니다. 정보주체는 개인정보를 보호받을 권리와 함께 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 가지고 있습니다. 개인정보가 유출되지 않도록 조심하시고 게시물을 포함한 타인의 개인정보를 훼손하지 않도록 유의해 주십시오. 정보주체가 위 책임을 다하지 못하고 타인 의 정보 및 존엄성을 훼손할 시에는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법률에 의해 처벌받을 수 있습니다.</p><h2 id="0b11c369-54be-4f0f-8e74-3155d63ac909" class=""><strong>14. 개인정보 보호 책임자의 연락처</strong></h2><p id="d26bdb62-1482-41ff-bbbc-dfe959e1c69b" class="">ㆍ 이름 : 이준엽</p><p id="d3b9d627-0cea-4959-9657-b5c9244092c8" class="">ㆍ 메일 : help@bomcomes.com</p><h2 id="c988e6a8-cdbd-4b0b-82d7-0e6a9f69ebaa" class=""><strong>15. 본 개인정보처리방침의 적용 범위</strong></h2><p id="19357b84-7fd3-4c14-82dc-e0b98f4f277f" class="">본 개인정보처리방침은 회사의 브랜드 중 하나인 ‘봄 캘린더’ 및 관련 제반 서비스에 적용되며, 다른 브랜드로 제공되는 서비스에 대해서는 별개의 개인정보처리방침이 적용될 수 있습니다.‘봄 캘린더’에 링크되어 있는 다른 회사의 웹사이트에서 개인정보를 수집하는 경우, 이용자 동의 하에 개인정보가 제공된 이후에는 본 개인정보처리방침이 적용되지 않습니다.</p><h2 id="a4cf14c1-f3b1-4ad7-b17d-4c9d3fb446fa" class=""><strong>16. 고지의 의무</strong></h2><p id="e41cbfc6-a0bd-4c51-9078-55abfb200d51" class="">현 개인정보처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 회사 홈페이지, 서비스 내의 &#x27;공지사항&#x27; 또는 기타 알기쉬운 방법을 통해 고지할 것입니다.다만, 개인정보의 수집 및 활용, 제3자 제공 등과 같이 이용자 권리의중요한 변경이 있을 경우에는 최소 30일 전에 고지합니다.</p><ul id="79e845de-9b40-4391-9b62-161088bb43a2" class="bulleted-list"><li style="list-style-type:disc">개인정보처리방침 공고일자 : 2023년 11월 13일</li></ul><ul id="0eb4ae8f-ae03-4e35-b5de-160475c410d4" class="bulleted-list"><li style="list-style-type:disc">개인정보처리방침 시행일자 : 2023년 12월 13일</li></ul><p id="bc9692eb-c3fc-4d70-84ca-e59cfca009ae" class="">
-</p><p id="a937ed2b-53e0-4b4d-b59a-1251357fc7b4" class="">변경 전 개인정보 처리방침 보기</p><p id="a44821bb-19c5-40ea-aa15-429ee5e8ac9b" class="">변경 전 개인정보 처리방침 보기 (2022년 12월 30일 시행)</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <div class="agree-wrap"> 
+        <!-- intro -->
+        <p class="text01 mrt12"> 봄컴즈 (이하 ‘회사’라 함)는 정보주체의 개인정보보호를 매우 중요시하며, 정보주체가 회사의 ‘봄 캘린더’ 서비스(이하 ‘서비스‘라 함)를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호받을 수 있도록 최선을 다하고 있습니다. <br>
+          이에 회사는 「개인정보보호법」, 「통신비밀보호법」, 「전기통신사업법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 정보통신서비스제공자가 준수하여야 할 관련 법규 상의 개인정보보호 규정을 준수하고 있습니다. <br>
+          회사는 개인정보처리방침을 통하여 정보주체가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다. <br>
+          또한 개인 정보처리방침을 서비스 내 공지사항 및 이용약관 화면에 공개함으로써 정보주체가 언제나 용이하게 보실 수 있도록 조치하고 있습니다. <br>
+          회사의 개인정보처리방침은 정부의 법률 및 지침 변경이나 회사의 내부 방침 변경 등으로 인하여 수시로 변경될 수 있고, 이에 따른 개인정보처리방침의 지속적인 개선을 위하여 필요한 절차를 정하고 있습니다. <br>
+          그리고 개인정보처리방침을 개정하는 경우 회사는 개인정보처리방침 변경 시행 7일전부터 사이트 공지사항을 통하여 공지하고 버전번호 및 개정일자 등을 부여하여 개정된 사항을 정보주체가 쉽게 알아볼 수 있도록 하고 있습니다.</p>
+        <!-- 01 -->
+        <h2>01. 개인정보 수집에 대한 동의</h2>
+        <p class="text01 mrt12"> 회사는 정보주체가 회사의 개인정보처리방침 또는 개인정보 수집 동의, 이용약관의 내용에 대하여 「동의」버튼 또는 「취소」버튼을 클릭할 수 있는 절차 또는 체크박스 유무를 마련하여, 「동의」버튼 또는 체크박스 체크 시 개인정보 수집에 대해 동의한 것으로 봅니다. </p>
+        <!-- 02 -->
+        <h2>02. 개인정보의 수집목적 및 이용목적</h2>
+        <p class="text01 mrt12"> "개인정보"라 함은 개인정보 보호법 제2조 제1호에 따라 살아 있는 개인에 관한 정보로서 성명, 주민등록번호 및 영상 등을 통하여 개인을 알아볼 수 있는 정보(해당 정보만으로는 특정 개인을 알아볼 수 없더라도 다른 정보와 쉽게 결합하여 알아볼 수 있는 것을 포함한다)를 말합니다.
+          회사는 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다.<br>
+          <br>
+          ① 회원가입 의사 확인, 이용자 식별, 회원 탈퇴 의사 확인 등 회원 관리를 위해 활용 <br>
+          ② 이용자와 약속한 서비스 제공, 서비스 제공에 따른 본인 인증, 문의사항 또는 불만 처리 및 회신, 공지사항 전달에 활용 <br>
+          ③ 법령 및 이용약관을 위반하는 회원에 대한 이용 제한 조치, 부정 이용 행위를 포함하여 서비스의 원활한 운영에 지장을 주는 행위, 비인가 행위에 대한 방지 및 제재, 계정도용 방지, 분쟁 조정을 위한 기록보존 등 이용자 보호 및 안전한 서비스 운영에 활용 <br>
+          ④ 서비스 이용 성향, 관심, 이용기록 분석 등을 반영한 신규 서비스 개발 및 맞춤형 서비스 제공 등 서비스 개선에 활용 <br>
+          ⑤ 이벤트 정보 및 참여기회 제공, 광고성 정보 제공 등 마케팅 및 프로모션에 활용
+          위의 내용에 대한 동의를 거부할 수 있습니다. 다만, 이에 대한 동의를 하지 않을 경우에는 신규 서비스나 이벤트 및 프로모션에 대한 안내를 받지 못할 수 있음을 알려 드립니다. <br>
+        </p>
+        <!-- 03 -->
+        <h2>03. 수집하는 개인정보 항목 및 수집방법</h2>
+        <h3>가. 수집하는 개인정보의 항목</h3>
+        <p class="text01 mrt12">① 회사는 회원가입, 서비스 이용, 원활한 고객상담 등 아래와 같은 개인정보를 수집하고 있습니다.</p>
+        <div class="table-wrap mrt12">
+          <table class="table">
+            <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            </colgroup>
+            <thead>
+              <tr>
+                <td>서비스</td>
+                <td>수집 항목</td>
+                <td>보유 및 이용 기간</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>일반 회원가입</td>
+                <td>[필수] 아이디(이메일 정보), 비밀번호</td>
+                <td rowspan="7">회원 탈퇴 시 즉시 삭제</td>
+              </tr>
+              <tr>
+                <td>SNS 회원가입 (페이스북, 구글,애플)</td>
+                <td>[필수] <br>
+                  - 페이스북 로그인시 프로필 정보(이메일주소, 닉네임, 이름)<br>
+                  - 구글 로그인 시 프로필 정보(이메일주소, 닉네임, 이름) <br>
+                  - 애플 로그인 시 프로필 정보(이메일, 로그인 생성번호)</td>
+              </tr>
+              <tr>
+                <td>달력 서비스 이용</td>
+                <td>[선택] 생리 시작일, 종료일 복용하는 약. 약 복용일 사랑한 날, 일정</td>
+              </tr>
+              <tr>
+                <td>몸 상태 기록</td>
+                <td>[선택] 생리량, 기분, 증상, 체온, 배란 테스트 결과, 자궁경부 점액, 메모</td>
+              </tr>
+              <tr>
+                <td>몸무게, 키 관리</td>
+                <td>[선택] 몸무게, 키</td>
+              </tr>
+              <tr>
+                <td>임신 관리&nbsp;</td>
+                <td>[선텍] 아기 이름, 출산 예정일, 다태아 여부</td>
+              </tr>
+              <tr>
+                <td>이용자 식별, 나이, 성별 분석을 통한 서비스 개선</td>
+                <td>[선택] 닉네임, 생년월일, 성별</td>
+              </tr>
+              <tr>
+                <td>문의 및 개선의견, 오류 고객 지원</td>
+                <td>[필수] 이메일 주소</td>
+                <td>답변 종료 후 30일 이내 파기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text01 mrt12"> ② 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.<br>
+          <br>
+          ㆍ IP Address, 쿠키, 방문 일시, 서비스 이용 기록 (‘봄 캘린더’ 애플리케이션 버전 및 가입일,     기기정보 (ADID 및 IDFA 등 기기고유식별값, OS버전, 단말기 모델명 등)<br>
+          <br>
+          ③ 부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 아래와 같은 정보들이 수집될 수 있습니다.<br>
+          이벤트 응모는 ‘봄 캘린더’에서 운영하는 소셜미디어(인스타그램, 블로그 등)및 홈페이지, 앱 등을 통하여 진행하는 이벤트에 참여한 이용자를 의미합니다.<br>
+          <br>
+          ㆍ 성명, 휴대전화번호, 주소, 이메일 등 개인식별정보<br>
+          <br>
+          ④ 수집경로에 따라 수집하는 항목이 추가되는 경우 수집하는 화면에서 별도로 고지하고 동의를 받습니다.</p>
+        <h3>나. 개인정보 수집방법</h3>
+        <p class="text01 mrt12"> 회사는 다음과 같은 방법으로 개인정보를 수집하며 정보 주체의 사전 동의 없이는 정보주체의 개인정보를 공개하지 않습니다. <br>
+          <br>
+          ㆍ ‘봄 캘린더’ 서비스 이용, 이벤트 응모 등</p>
+        <!-- 03 -->
+        <h3>나. 제공 받는자</h3>
+        <p class="text01 mrt12">사용자가 지정한 공유 받는자</p>
+        <h3>다. 제공 받는 자의 이용목적</h3>
+        <p class="text01 mrt12">봄 캘린더 기록 공유하기 제공</p>
+        <!-- 04 -->
+        <h2>04. 수집하는 개인정보의 보유 및 이용기간</h2>
+        <p class="text01 mrt12">회사가 수집하는 개인정보의 보유 및 이용기간은 정보주체가 회사에서 제공하는 서비스를 이용하는 동안 회원 탈퇴를 요청하거나 개인정보의 수집·이용 등에 대한 동의를 철회할 때까지 보존합니다. <br>
+          다만, 아래의 "06. 정보주체 자신의 개인정보 관리(열람, 정정, 삭제 등)에 관한 사항" 에서 설명한 절차와 방법에 따라 회원 본인이 직접 삭제(탈퇴)를 요청한 경우에는 재생할 수 없는 방법에 의하여 디스크에서 완전히 삭제하며 추후 열람이나 이용이 불가능한 상태로 처리됩니다. <br>
+          그리고 "03. 수집하는 개인정보 항목 및 수집방법"에서와 같이 일시적인 목적 (설문조사, 이벤트, 본인확인 등)으로 입력 받은 개인정보는 그 목적이 달성된 이후에는 동일한 방법으로 사후 재생이 불가능한 상태로 처리됩니다. <br>
+          또한 「상법」, 「전자상거래 등에서의 소비자보호에 관한 법률」 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보 를 보관합니다. <br>
+        이 경우 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.</p>
+        <div class="table-wrap mrt12">
+          <table class="table">
+            <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+            </colgroup>
+            <thead>
+              <tr>
+                <td>보유목적</td>
+                <td>보유항목&nbsp;&nbsp;</td>
+                <td>보유근거</td>
+                <td>보유 및 이용 기간</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>통신사실확인 자료 제공</td>
+                <td>로그기록, 접속지 정보 등</td>
+                <td>「통신비밀보호법」</td>
+                <td>3개월</td>
+              </tr>
+              <tr>
+                <td>표시/광고에 관한 기록</td>
+                <td>표시/광고에 관한 기록</td>
+                <td rowspan="4">「전자상거래 등에서의 소비자 보호에 관한 법률」</td>
+                <td>6개월</td>
+              </tr>
+              <tr>
+                <td>대금결제 및 재화 등의 공급에 관한 기록</td>
+                <td>대금결제 및 재화 등의 공급에 관한 기록</td>
+                <td>5년</td>
+              </tr>
+              <tr>
+                <td>계약 또는 청약 철회 등에 관한 기록</td>
+                <td>소비자 식별정보 계약/청약철회 기록</td>
+                <td>5년</td>
+              </tr>
+              <tr>
+                <td>소비자 불만 또는 분쟁처리에 관한 기록</td>
+                <td>소비자 식별정보 분쟁처리 기록</td>
+                <td>3년</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 05 -->
+        <h2>05. 수집한 개인정보의 공유 및 제공</h2>
+        <p class="text01 mrt12">회사는 정보주체가 개인정보를 "02. 개인정보의 수집 및 이용목적"에서 고지한 범위 내에서 사용하며, 정보주체의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 정보주체의 개인정보를 외부에 제공하지 않습니다. <br>
+          다만, 아래의 경우에는 예외로 합니다.<br>
+          
+           <br>
+          ㆍ 회사의 서비스 제공에 따른 요금 정산을 위하여 필요한 경우 <br>
+          ㆍ 앱 또는 홈페이지에 게시한 서비스 이용 약관 및 기타 회원 서비스 등의 이용약관 또는 운영원칙을 위반한 경우 <br>
+          ㆍ 회사의 서비스를 이용하여 타인에게 정신적, 물질적 피해를 줌으로써 그에 대한 법적인 조치를취하기 위하여 개인정보를 제공해야 한다고 판단되는 충분한 근거가 있는 경우 <br>
+          ㆍ 기타 법에 의해 요구된다고 선의로 판단되는 경우 (ex. 관련법에 의거 적법한 절차에 의한 정부/수사기관의 요청이 있는 경우 등) <br>
+          ㆍ 서비스 이용을 위해 이용자가 사전에 동의한 경우 </p>
+		  <div class="table-wrap mrt12">
+          <table class="table">
+            <colgroup>
+            <col style="width:25%">
+            <col style="width:25%">
+            <col style="width:25%">
+			<col style="width:25%">	
+            </colgroup>
+            <thead>
+              <tr>
+				<td>제공받는자</td>
+                <td>제공목적</td>
+                <td>제공 항목</td>
+                <td>보유 및 이용 기간</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>이용자가 지정한 공유 받는 자</td>
+                <td>봄 캘린더 기록 공유하기 제공</td>
+                <td>생리주기 및 생리기간, 마지막 생리일, 생리예정일, 가임기 시작일/종료일, 임신확률, 생리양과 생리통 정도,약 먹음, 사랑한 날 그외 사용자가 직접 선택한 항목</td>
+				<td>회원 탈퇴 시 까지 또는 서비스 정료 및 공유 끊기 선택시 까지&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 06 -->
+        <h2>06. 정보주체 자신의 개인정보 관리(열람, 정정, 삭제 등)에 관한 사항</h2>
+        <p class="text01 mrt12">1. 정보주체는 회사에 대해 언제든지 다음의 개인정보 보호 관련 권리를 행사할 수 있습니다. <br>
+          ① 개인정보 열람요구 <br>
+          ② 오류 등이 있을 경우 정정 요구 <br>
+          ③ 삭제요구 <br>
+          ④ 처리정지 요구<br>
+          <br>
+          2. 제1항에 따른 권리 행사는 회사에 대해 서비스 내 고객센터 또는 이메일(help@bomcomes.com)을 통하여 하실 수 있으며 회사는 이에 대해 지체없이 조치하겠습니다.<br>
+          <br>
+          3. 정보주체가 개인정보의 오류 등에 대해 정정 또는 삭제를 요구한 경우에는 회사는 정정 또는 삭제를 완료할 때까지 당해 개인정보를 이용하거나 제공하지 않습니다.<br>
+          <br>
+          4. 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.<br>
+          <br>
+          5. 정보주체는 개인정보 보호법 등 관계법령을 위반하여 회사가 처리하고 있는 정보주체 본인이나 타인의 개인정보 및 사생활을 침해하여서는 아니됩니다.<br>
+          <br>
+          6. 정보주체는 언제든지 ‘회원탈퇴’ 등을 통해 개인정보의 수집 및 이용 동의를 철회할 수 있습니다. <br>
+        </p>
+        <!-- 07 -->
+        <h2>07. 개인정보 자동수집 장치의 설치·운영 및 그 거부에 관한 사항</h2>
+        <h3>가. 쿠키(cookie)의 운영에 관한 사항</h3>
+        <p class="text01 mrt12">회사는 이용자들에게 특화된 맞춤서비스를 제공하기 위해서 이용자들의 정보를 저장하고 수시로 불러오는 '쿠키(cookie)'를 사용합니다.<br>
+          쿠키는 웹사이트를 운영하는데 이용되는 서버(HTTP)가 이용자의 컴퓨터 브라우 저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터 또는 스마트폰 내의 하드디스크에 저장되기도 합니다. <br>
+          이용자들이 홈페이지에 접속한 후 로그인하여 회원서비스 등의 서비스를 이용하기 위해서는 쿠키를 허용하셔 야 합니다. <br>
+          회사는 이용자들에게 적합하고 보다 유용한 서비스를 제공하기 위해서 쿠키를 이용하여 아이디에 대한 정보를 찾아냅니다. <br>
+          쿠키는 정보주체의 컴퓨터 또는 스마트폰 단말기의 속성은 식별하지만 정보주체자를 개인적으로 식별하지는 않습니다. <br>
+          <br>
+          1. 쿠키의 사용 목적<br>
+          이용자들이 방문한 회사가 제작한 사이트의 각 서비스와 웹 사이트들에 대한 방문 및 이용형태,보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위하여 사용합니다. <br>
+          <br>
+          2. 쿠키의 사용 설정<br>
+          이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 이용자는 웹 브라우저에서 옵션을설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있 습니다. <br>
+          쿠키 설정을 거부하는 방법으로는 이용자가 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다. <br>
+          <br>
+          ㆍ 설정방법 예(인터넷 익스플로러의 경우) : 웹 브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보
+          다만, 쿠키의 저장을 거부할 경우에는 추후 로그인이 필요한 일부 서비스는 이용에 어려움이 있을 수 있습니다.</p>
+        <h3>나. 고객 행동 및 마케팅 분석 운영에 대한 사항</h3>
+        <p class="text01 mrt12">회사는 사용자 행태 분석 서비스와 온라인 맞춤형 광고를 이용하고 있으며 해당 사업자가 개인식별정보 없이 서비스 이용행태정보를 수집하도록 허용하고 있습니다.<br>
+          ‘봄 캘린더’ 앱은 이용자의 ADID/IDFA를 수집할 수 있습니다. ADID(Android OS)/IDFA(iOS)란 모바일앱 이용자의 광고 식별 값으로서, 사용자의 맞춤 서비스 제공이나 더 나은 환경의 광고를 제공하기 위한 측정을 위해 수집될 수 있습니다.<br>
+          <br>
+          [거부방법]<br>
+          ㆍ Android : 설정 &gt; 구글(구글설정) &gt; 광고 &gt; 광고 맞춤설정 선택 해제
+          - iOS : 설정 &gt; 개인정보보호 &gt; Apple광고 &gt; 맞춤형 광고 선택 해제
+          사용자는 언제든지 이러한 맞춤형 광고 수신을 거부할 수 있으며, 이 경우 맞춤형 광고가 아닌 임의의 광고가 노출됩니다. </p>
+        <!-- 08 -->
+        <h2>08. 개인정보 파기 절차 및 방법</h2>
+        <p class="text01 mrt12">회사는 수집한 개인정보의 이용 목적이 달성된 후에는 보관 및 이용 기간에 따라 해당 정보를 바로 파기합니다. 다만 내부 방침에 의해 서비스 부정이용기록은 부정 가입 및 이용 방지를 위하여 회원 탈퇴 시점으로부터 최대 1년간 보관 후 파기하며, 관계법령에 의해 보관해야 하는 정보는 법령이 정한 기간 동안 보관한 후 파기합니다.<br>
+          파기 절차, 방법, 시점은 다음과 같습니다. </p>
+        <h3>가. 파기절차</h3>
+        <p class="text01 mrt12">① 회원이 회원가입 등을 위해 입력한 정보는 목적이 달성된 후 별도의 데이터베이스(DB)로 옮겨져 회사의 내부 방침과 관련 법령에 따른 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.<br>
+          <br>
+          ② 별도의 데이터베이스(DB)로 옮겨진 개인정보는 법령에 따른 경우가 아니면 보유 목적 이외의 다른 용도로 이용되지 않습니다. </p>
+        <h3>나. 파기방법</h3>
+        <p class="text01 mrt12">① 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없게 하는 기술적 방법으로 삭제합니다.<br>
+          <br>
+          ② 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다. </p>
+        <!-- 09 -->
+        <h2>09. 장기 미이용 회원의 개인정보 분리 저장·관리</h2>
+        <p class="text01 mrt12">최근 1년 동안 서비스 이용기록이 없는 회원을 휴면회원으로 전환하고, 해당 회원의 개인정보를 분리하여 저장∙관리합니다.<br>
+          휴면회원 전환으로 개인정보가 분리 저장∙관리될 경우 모든 서비스 이용이 불가능하며, 다시 서비스를 이용하기 위해서는 서비스에서 본인인증 절차를 통해 휴면 해제 의사를 표시해야 합니다.<br>
+          휴면 전환일 1개월 전   앱 푸시 알림, 이메일   등을 통해 휴면 예정 회원 안내 메시지를 전달해드립니다.<br>
+          휴면 전환일 전까지 서비스를 다시 이용하실 경우 휴면회원 전환이 취소되니, 휴면회원 전환과 개인정보 분리 보관을 원치 않으시는 경우 서비스에 로그인하시면 됩니다.<br>
+          ㆍ 분리 저장·관리 대상 : 1년 동안 서비스 이용 기록이 없는 계정<br>
+          ㆍ 휴면 전환일 : 서비스 이용 기록이 없이 1년이 도래하는 시점<br>
+          ㆍ 분리 저장·관리되는 개인정보의 항목 : 생리, 피임약 복용, 사랑한 날, 프로필 정보&nbsp;(개인식별번호(CI/DI) 등은 제외)<br>
+          ㆍ 삭제되는 개인정보의 항목 : 없음 </p>
+        <!-- 10 -->
+        <h2>10. 개인정보 관련 기술적 및 관리적 보호 대책</h2>
+        <p class="text01 mrt12">회사는 이용자의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/관리적 대책을 강구하고 있습니다. </p>
+        <!-- 11 -->
+        <h2>11. 개인정보의 위탁처리</h2>
+        <p class="text01 mrt12">위탁처리 내용이 없습니다.</p>
+        <!-- 12 -->
+        <h2>12. 개인정보관련 의견수렴 및 불만처리에 관한 사항</h2>
+        <p class="text01 mrt12">회사는 개인정보보호와 관련하여 정보주체 여러분들의 의견을 수렴하고 있으며 불만을 처리하기 위하여 모든 절차와 방법을 마련하고 있습니다. <br>
+          정보주체들은 하단에 명시한 "14. 회사 고객센터 안내"항을 참고하여 전화나 메일을 통하여 불만사항을 신고할 수 있고, 회사는 정보주체들의 신고사항에 대하여 신속하고도 충분한 답변을 해 드릴 것입니다. <br>
+          &lt;아래의 기관은 회사와는 별개의 기관으로서, 회사의 자체적인 개인정보 불만처리, 피해구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 고객센터로 문의하여 주시기 바랍니다.&gt;<br>
+          <br>
+          ㆍ 개인정보 분쟁조정위원회 : 1833-6972 (www.kopico.go.kr)<br>
+          ㆍ 개인정보 침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)<br>
+          ㆍ 대검찰청 사이버수사과 : (국번없이) 1301, privacy@spo.go.kr, (www.spo.go.kr)<br>
+          ㆍ 경찰청 사이버안전국 : (국번없이) 182, (cyberbureau.police.go.kr)</p>
+        <!-- 13 -->
+        <h2>13. 정보주체의 권리와 의무</h2>
+        <p class="text01 mrt12">정보주체가 입력한 부정확한 정보로 인해 발생하는 사고의 책임은 자신에게 있으며 타인 정보의 도용 등 허위정보를 입력할 경우 회원자격이 상실될 수 있습니다. 정보주체는 개인정보를 보호받을 권리와 함께 스스로를 보호하고 타인의 정보를 침해하지 않을 의무도 가지고 있습니다. 개인정보가 유출되지 않도록 조심하시고 게시물을 포함한 타인의 개인정보를 훼손하지 않도록 유의해 주십시오. 정보주체가 위 책임을 다하지 못하고 타인 의 정보 및 존엄성을 훼손할 시에는 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련 법률에 의해 처벌받을 수 있습니다.</p>
+        <!-- 14 -->
+        <h2>14. 개인정보 보호 책임자의 연락처</h2>
+        <p class="text01 mrt12"> ㆍ 이름 : 이준엽<br>
+          ㆍ 메일 : help@bomcomes.com</p>
+        <!-- 15 -->
+        <h2>15. 본 개인정보처리방침의 적용 범위</h2>
+        <p class="text01 mrt12"> 본 개인정보처리방침은 회사의 브랜드 중 하나인 ‘봄 캘린더’ 및 관련 제반 서비스에 적용되며, 다른 브랜드로 제공되는 서비스에 대해서는 별개의 개인정보처리방침이 적용될 수 있습니다. <br>
+          ‘봄 캘린더’에 링크되어 있는 다른 회사의 웹사이트에서 개인정보를 수집하는 경우, 이용자 동의 하에 개인정보가 제공된 이후에는 본 개인정보처리방침이 적용되지 않습니다. </p>
+        <!-- 16 -->
+        <h2>16. 고지의 의무</h2>
+        <p class="text01 mrt12">현 개인정보처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 회사 홈페이지, 서비스 내의 '공지사항' 또는 기타 알기쉬운 방법을 통해 고지할 것입니다. <br>
+          다만, 개인정보의 수집 및 활용, 제3자 제공 등과 같이 이용자 권리의중요한 변경이 있을 경우에는 최소 30일 전에 고지합니다. <br>
+          ㆍ 개인정보처리방침 공고일자 : 2023년 11월 13일<br>
+          ㆍ 개인정보처리방침 시행일자 : 2023년 12월 13일</p>
+        <br>
+        <br>
+        <a href="privacy_history/privacy_20221230.html" target="_self"><span class="btn_box">변경 전 개인정보 처리방침 보기 (2022년 12월 30일 시행)</span></a> </div>
+    </div>
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+</div>
+<!-- //.wrap --> 
+<!-- .popup-page --> 
+<!-- <div class="popup-page">
+</div> --> 
+<!-- // .popup-page --> 
+</body>
+</html>
