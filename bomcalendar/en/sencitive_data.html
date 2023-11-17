@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+<meta name="format-detection" content="telephone=no" />
+<title>bomcoms</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<!-- .wrap -->
+<div class="wrap"> 
+  <!-- .container -->
+  <div class="container"> 
+    <!-- .content -->
+    <div class="content" id="content">
+      <div class="agree-wrap"> 
+        <p class="text01 mrt6">BomComes ("the Company"), the operator of the Bom Calendar Service ("the Service"), is committed to fulfilling the responsibilities and obligations defined in the Personal Information Protection Act.
+Your consent is required for the collection and use of personal information as follows:<br></p>
+        <!-- 01 -->
+        <h2>Purpose of Collection</h2>
+        <p class="text01 mrt6">To automatically calculate the user's period cycle and provid body condition and mood information based on menstrual data.</p>
+        <!-- 02 -->
+        <h2>Items Collected</h2>
+        <p class="text01 mrt6">Start date, end date of period, birth control pill intake, medication intake, days of intimacy, ovulation, height, weight, menstrual bleeding, symptoms, body temperature, ovulation test results, cervical mucus, expected date of childbirth, pregnancy status.</p>
+        <!-- 03 -->
+        <h2>Retention Period</h2>
+		<p class="text01 mrt6">Until membership withdrawal.</p>
+		<br>
+        <p class="text01 mrt6">Consent is mandatory as without it, you will not be able to smoothly use services such as menstrual cycle calculation, provision of body and mood information, and sharing records. For more details, please refer to the Privacy Policy.&nbsp;</p>
+</div>
+    </div>
+    <!-- //.content --> 
+  </div>
+  <!-- //.container --> 
+</div>
+<!-- //.wrap --> 
+<!-- .popup-page --> 
+<!-- <div class="popup-page">
+</div> --> 
+<!-- // .popup-page -->
+<script type="text/javascript" src="bridge.js"></script> 
+<script>
+  function eventClick(title, target, name){
+    logEvent(name);
+    openNewWebViewWithPath(title,target);
+  }
+		
+  window.onload = function(){
+    screenEvent('scr_webview_sencitive_privacy');
+  }
+</script>
+</body>
+</html>
