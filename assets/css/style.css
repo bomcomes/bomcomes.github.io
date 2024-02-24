@@ -3469,6 +3469,7 @@ ul {
 .footer_right li.lines-ver{ width: 1px; height: 13px; background-color: #dddddd; display: block; line-height: 13px;}
 .footer_right a {color:#9497a2;}
 .footer_right .email{ display: block; float: none; margin-bottom: 8px;}
+.footer_right .email li{ display: block; float: none; margin-left: 8px;}
 .shadow {text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);}
 .icon.icon_mau{width:80px; height:80px;}
 .margin-right8{ margin-right:8px;}
