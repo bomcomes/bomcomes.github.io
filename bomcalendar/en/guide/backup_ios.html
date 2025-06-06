@@ -1,88 +1,225 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
-<meta name="format-detection" content="telephone=no" />
-<title>bomcoms</title>
-<link rel="stylesheet" href="../../css/style_en.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <title>bomcoms</title>
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="../../css/style_en.css" />
+  </head>
 
-<body>
-<!-- .wrap -->
-<div class="wrap"> 
-  <!-- .container -->
-  <div class="container"> 
-    <!-- .content -->
-    <div class="content" id="content">
-      <ol class="guideWrap">
-        <!-- Step1 -->
-        <li>
-          <div class="top"> <span class="num">1</span>
-            <div class="textBox">
-              <p class="title">Back up</p>
-              <p class="subtitle">In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Back up data’.</p>
-            </div>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup1_1.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">Please choose the application or the email to send out the back up.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup1_2.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">Please check whether back up data is attached to the email if you want to back up to email. Once you enter the email address to be backed up to the recipient, select 'Send'. The back up data file is saved to incoming mail as the email is sent.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup1_3.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle">If you want to back up to Cloud, check whether the account to be saved is correct and select 'UPLOAD(Save)'. Once you select 'UPLOAD(Save)', the back up data file is saved to Cloud.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup1_4.png" alt="이미지" width="295" height="auto"></div>
-        </li>
-        <!-- Step2 -->
-        <li>
-          <div class="top"> <span class="num">2</span>
-            <div class="textBox">
-              <p class="title">Restore</p>
-              <p class="subtitle">If you have backed up to email, select the email and then choose the attached back up data file.</p>
-            </div>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup2_1.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">Please select ‘Save to File’.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup2_2.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Restore data’.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup2_3.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">Please select the file to restore.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup2_4.png" alt="이미지" width="295" height="auto"></div>
-          <div class="arrow_down"></div>
-          <div class="textBox">
-            <p class="subtitle center">In the restore confirmation popup, select the ‘Yes, please restore’ button to complete the restoration.</p>
-          </div>
-          <div class="image"><img src="../img/guide/ios/screen_menual_backup2_5.png" alt="이미지" width="295" height="auto"></div>
-        </li>
-      </ol>
+  <body>
+    <!-- .wrap 시작 -->
+    <div class="wrap">
+      <!-- .container 시작 -->
+      <div class="container">
+        <!-- .content 시작 -->
+        <div class="content" id="content">
+          <!-- 가이드 목록 시작 -->
+          <ol class="guideWrap">
+
+            <!-- Step 1: Back up 가이드 -->
+            <li>
+              <div class="top">
+                <span class="num">1</span>
+                <div class="textBox">
+                  <p class="title">Back up</p>
+                  <p class="subtitle">
+                    In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Back up data’.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 이미지 1-1 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup1_1.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 메일 또는 앱 선택 안내 -->
+              <div class="textBox">
+                <p class="subtitle center">
+                  Please choose the application or the email to send out the back up.
+                </p>
+              </div>
+
+              <!-- 이미지 1-2 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup1_2.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 이메일 백업 설명 -->
+              <div class="textBox">
+                <p class="subtitle center">
+                  Please check whether back up data is attached to the email if you want to back up to email. Once you enter the email address to be backed up to the recipient, select 'Send'. The back up data file is saved to incoming mail as the email is sent.
+                </p>
+              </div>
+
+              <!-- 이미지 1-3 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup1_3.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 클라우드 백업 설명 -->
+              <div class="textBox">
+                <p class="subtitle center">
+                  If you want to back up to Cloud, check whether the account to be saved is correct and select 'UPLOAD(Save)'. Once you select 'UPLOAD(Save)', the back up data file is saved to Cloud.
+                </p>
+              </div>
+
+              <!-- 이미지 1-4 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup1_4.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+            </li>
+
+            <!-- Step 2: Restore 가이드 -->
+            <li>
+              <div class="top">
+                <span class="num">2</span>
+                <div class="textBox">
+                  <p class="title">Restore</p>
+                  <p class="subtitle">
+                    If you have backed up to email, select the email and then choose the attached back up data file.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 이미지 2-1 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_1.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 빈 텍스트박스 (의도적으로 비워둠) -->
+              <div class="textBox"></div>
+
+              <!-- 이미지 2-2 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_2.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- ‘Save to File’ 안내 -->
+              <div class="textBox">
+                <p class="subtitle center">Please select ‘Save to File’.</p>
+              </div>
+
+              <!-- 이미지 2-3 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_3.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 복원 메뉴 이동 안내 -->
+              <div class="textBox">
+                <p class="subtitle center">
+                  In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Restore data’.
+                </p>
+              </div>
+
+              <!-- 이미지 2-4 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_4.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 복원할 파일 선택 안내 -->
+              <div class="textBox">
+                <p class="subtitle center">Please select the file to restore.</p>
+              </div>
+
+              <!-- 이미지 2-5 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_5.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+              <div class="arrow_down"></div>
+
+              <!-- 복원 확인 안내 -->
+              <div class="textBox">
+                <p class="subtitle center">
+                  In the restore confirmation popup, select the ‘Yes, please restore’ button to complete the restoration.
+                </p>
+              </div>
+
+              <!-- 이미지 2-6 -->
+              <div class="image">
+                <img
+                  src="../img/guide/ios/screen_menual_backup2_6.png"
+                  alt="이미지"
+                  width="295"
+                  height="auto"
+                />
+              </div>
+            </li>
+
+          </ol>
+          <!-- 가이드 목록 끝 -->
+        </div>
+        <!-- //.content 끝 -->
+      </div>
+      <!-- //.container 끝 -->
     </div>
-    <!-- //.content --> 
-  </div>
-  <!-- //.container --> 
-</div>
-<!-- //.wrap --> 
-<script type="text/javascript" src="bridge.js"></script> 
-<script>
-  window.onload = function(){
-    screenEvent('scr_guide_backup_ios_en');
-  }
-</script>
-</body>
+    <!-- //.wrap 끝 -->
+
+    <!-- 스크립트 로드 -->
+    <script type="text/javascript" src="bridge.js"></script>
+    <script>
+      // 페이지 로드 시 스크린 이벤트 호출
+      window.onload = function () {
+        screenEvent('scr_guide_backup_ios_en');
+      };
+    </script>
+  </body>
 </html>
