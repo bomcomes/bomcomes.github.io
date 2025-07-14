@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>봄 캘린더 소개</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 365px;
+      padding: 0 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .description {
+      margin-top: 32px;
+    }
+
+    .description h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .description p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 32px 0;
+      flex-wrap: wrap;
+    }
+
+    .store-buttons a {
+      background: black;
+      color: white;
+      border-radius: 999px;
+      padding: 10px 20px 10px 12px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.95em;
+      text-decoration: none;
+    }
+
+    .store-buttons a img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9CA5B5;
+      padding-bottom: 24px;
+    }
+
+    /* 👉 데스크탑 브레이크포인트 */
+    @media (min-width: 768px) {
+      .wrap {
+        max-width: 720px;
+        padding: 0 24px;
+      }
+
+      .description h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <!-- 반응형 이미지 교체 -->
+    <div class="hero">
+      <picture>
+        <source srcset="img/img_introduce_w.png" media="(min-width: 768px)" />
+        <img src="img/img_introduce_m.png" alt="봄 캘린더 소개 이미지" />
+      </picture>
+    </div>
+
+    <div class="description">
+      <h2>생리주기를 건강하게 관리해보세요</h2>
+      <p>앱 스토어, 플레이 스토어에서 다운로드 가능합니다.</p>
+    </div>
+
+    <div class="store-buttons">
+      <a href="https://apps.apple.com/app/apple-store/id1190438906?pt=119969822&ct=invite&mt=8" target="_blank">
+        <img src="img/icon/icon_apple.png" alt="App Store" />App store
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank">
+        <img src="img/icon/icon_google.png" alt="Play Store" />Play store
+      </a>
+    </div>
+
+    <div class="footer">
+      ©bomcomes All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
