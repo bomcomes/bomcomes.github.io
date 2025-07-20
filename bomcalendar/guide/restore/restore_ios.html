@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>bomcoms</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <!-- .wrap -->
+  <div class="wrap">
+    <!-- .container -->
+    <div class="container">
+      <!-- .content -->
+      <div class="content" id="content">
+        <ol class="guideWrap">
+
+          <!-- Step 1: 백업하기 -->
+          
+          <!-- Step 2: 복원하기 -->
+          <li>
+            <div class="textBox">
+              <p class="subtitle center">백업을 메일에 했다면 메일을 선택한 뒤 첨부된 사용 기록 파일을 선택해주세요.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_1.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox"></div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_2.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">‘파일에 저장'을 선택해 주세요.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_3.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">
+                봄 캘린더 설정 &gt; 개인/보안/백업에서 '파일에서 복원'을 선택해주세요.
+              </p>
+            </div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_4.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">복원할 파일을 선택해 주세요.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_5.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">
+                복원 확인 팝업에서 ‘네 복원해주세요.’ 버튼을 선택하면 복원이 완료됩니다.
+              </p>
+            </div>
+
+            <div class="image">
+              <img src="../../img/guide/ios/screen_menual_backup2_6.png" alt="이미지" width="295" height="auto" />
+            </div>
+          </li>
+
+        </ol>
+      </div>
+      <!-- //.content -->
+    </div>
+    <!-- //.container -->
+  </div>
+  <!-- //.wrap -->
+
+  <script src="bridge.js"></script>
+  <script>
+    function eventClick(title, target, name) {
+      logEvent(name);
+      openNewWebViewWithPath(title, target);
+    }
+
+    window.onload = function () {
+      screenEvent("scr_guide_restore_ios");
+    };
+  </script>
+</body>
+</html>
