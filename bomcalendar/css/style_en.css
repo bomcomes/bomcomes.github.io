@@ -179,6 +179,22 @@ select {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.title_n {
+color: #544EF2;
+text-align: center;
+/* Head/Head 1 */
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 28px */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+	margin:40px 0 12px 0;
+	
+}
 .event-wrap .event-list .event-box .title-box .date {
   margin-top: 4px;
   color: #808080;
