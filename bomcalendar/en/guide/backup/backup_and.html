@@ -5,80 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
   <meta name="format-detection" content="telephone=no" />
   <title>bomcoms</title>
-  <link rel="stylesheet" href="../../../css/style_en.css" />
+  <link rel="stylesheet" href="../../../css/style.css" />
 </head>
-
 <body>
-  <!-- .wrap -->
+  <!-- 전체 레이아웃 랩 -->
   <div class="wrap">
-    <!-- .container -->
     <div class="container">
-      <!-- .content -->
       <div class="content" id="content">
         <ol class="guideWrap">
 
-          <!-- Step 1: Back up -->
+          <!-- Step 1. 백업하기 -->
           <li>
             <div class="textBox">
-              <p class="subtitle center">
-              In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Back up data’. </p>
+              <p class="subtitle center">In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Data Backup’.</p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup1_1.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/backup/screen_menual_backup1.png" alt="백업 화면 1" width="295" />
             </div>
             <div class="arrow_down"></div>
 
             <div class="textBox">
-              <p class="subtitle center">
-                Please choose the application or the email to send out the back up.
-              </p>
+              <p class="subtitle center">Please choose the application or the email to send out the back up.</p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup1_2.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/backup/screen_menual_backup2.png" alt="백업 화면 2" width="295" />
             </div>
-            <div class="arrow_down"></div>
-
             <div class="textBox">
+			<p class="title_n">A. When backing up data to email</p>
               <p class="subtitle center">
-                Please check whether back up data is attached to the email if you want to back up to email.
-                Once you enter the email address to be backed up to the recipient, select 'Send'.<br />
-                The back up data file is saved to incoming mail as the email is sent.
+                Please check whether back up data is attached to the email if you want to back up to email. Once you enter the email address to be backed up to the recipient, select 'Send'. The back up data file is saved to incoming mail as the email is sent.
               </p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup1_3.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/backup/screen_menual_backup3.png" alt="백업 화면 3" width="295" />
             </div>
-            <div class="arrow_down"></div>
 
-            <div class="textBox">
-              <p class="subtitle">
-                If you want to back up to Cloud, check whether the account to be saved is correct and select 'Save'.<br />
-                Once you select 'Save', the back up data file is saved to Cloud.
+<div class="textBox">
+			<p class="title_n">B. When backing up data to the cloud</p>
+              <p class="subtitle center">
+                If you want to back up to Cloud, check whether the account and location to be saved are correct and select ‘Save(Upload)’. Once you select ‘Save(Upload)’, the backup data file is saved to Cloud.
               </p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup1_4.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/backup/screen_menual_backup4.png" alt="백업 화면 4" width="295" />
             </div>
           </li>
-
-          <!-- Step 2: Restore -->
-          
         </ol>
       </div>
-      <!-- //.content -->
     </div>
-    <!-- //.container -->
   </div>
-  <!-- //.wrap -->
 
-  <script src="bridge.js"></script>
+  <!-- 이벤트 트래킹 스크립트 -->
+  <script type="text/javascript" src="bridge.js"></script>
   <script>
+    function eventClick(title, target, name) {
+      logEvent(name);
+      openNewWebViewWithPath(title, target);
+    }
+
     window.onload = function () {
-      screenEvent('scr_guide_backup_and_en');
+      screenEvent("scr_guide_backup_and");
     };
   </script>
 </body>

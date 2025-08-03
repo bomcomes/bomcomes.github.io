@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
   <meta name="format-detection" content="telephone=no" />
   <title>bomcoms</title>
-  <link rel="stylesheet" href="../../../css/style_en.css" />
+  <link rel="stylesheet" href="../../../css/style.css" />
 </head>
 
 <body>
@@ -16,27 +16,33 @@
       <!-- .content -->
       <div class="content" id="content">
         <ol class="guideWrap">
-          <!-- Step 2: Restore -->
+
+          <!-- A -->
+
           <li>
-            <div class="textBox">
+<div class="textBox">
+			<p class="title_n">A. When restoring data from email</p>
               <p class="subtitle center">
-                If you backed up via email, please select the email and download the attached back up data file.
+                If you have backed up to email, select the email and then choose the attached back up data file.
               </p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup2_1.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore1.png" alt="이미지" width="295" height="auto" />
             </div>
             <div class="arrow_down"></div>
 
+            <div class="textBox"></div>
+
+            <div class="image"> </div>
+
             <div class="textBox">
               <p class="subtitle center">
-                In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Restore data’.
-              </p>
+              In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Data Restore’.</p>
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup2_2.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore2.png" alt="이미지" width="295" height="auto" />
             </div>
             <div class="arrow_down"></div>
 
@@ -45,7 +51,7 @@
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup2_3.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore3.png" alt="이미지" width="295" height="auto" />
             </div>
             <div class="arrow_down"></div>
 
@@ -56,7 +62,37 @@
             </div>
 
             <div class="image">
-              <img src="../../img/guide/aos/screen_menual_backup2_4.png" alt="이미지" width="295" height="auto" />
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore4.png" alt="이미지" width="295" height="auto" />
+            </div>
+          </li>
+<!-- B -->
+          <li>
+<div class="textBox">
+			<p class="title_n">B. When restoring data from the cloud</p>
+              <p class="subtitle center">
+              In the Bom Calendar Settings &gt; ‘Personal/Security/Backup’, please select ‘Data Restore’.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore5.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">Please select the file to restore from your cloud.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore6.png" alt="이미지" width="295" height="auto" />
+            </div>
+            <div class="arrow_down"></div>
+
+            <div class="textBox">
+              <p class="subtitle center">In the restore confirmation popup, select the ‘Yes, please restore’ button to complete the restoration.</p>
+            </div>
+
+            <div class="image">
+              <img src="../../../en/img/guide/aos/restore/screen_menual_restore7.png" alt="이미지" width="295" height="auto" />
             </div>
           </li>
 
@@ -70,8 +106,13 @@
 
   <script src="bridge.js"></script>
   <script>
+    function eventClick(title, target, name) {
+      logEvent(name);
+      openNewWebViewWithPath(title, target);
+    }
+
     window.onload = function () {
-      screenEvent('scr_guide_restore_and_en');
+      screenEvent("scr_guide_restore_and");
     };
   </script>
 </body>
