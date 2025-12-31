@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>bomcomes</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="content" id="content">
+        
+        <div class="fullimg">
+          <img src="img/guide/report/image_report.png" alt="리포트 상세 가이드 내용">
+        </div>
+    <!-- 버튼 -->
+        <div class="fullimg">
+          <a href="여기에_이동할_주소를_입력하세요">
+            <img src="img/guide/report/button_area.png" alt="가이드 확인 및 이동 버튼">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="bridge.js"></script>
+  <script>
+    // 페이지 로드가 완료되면 실행되는 함수
+    window.onload = function() {
+      // 앱 내 화면 로그 전송 이벤트 호출
+      screenEvent('scr_webview_report_notice');
+    }
+  </script>
+</body>
+</html>
