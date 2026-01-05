@@ -57,7 +57,7 @@ function closeWebView() {
 function goBack() {
   if (isAndroid() && !!window.bomapp.goBack) {
     // Call Android interface
-    window.bomapp.closeWebView(JSON.stringify(''));
+    window.bomapp.goBack(JSON.stringify(''));
   } else if (isIOS() && !!window.webkit.messageHandlers.goBack) {
     // Call iOS interface
     window.webkit.messageHandlers.goBack.postMessage('');
