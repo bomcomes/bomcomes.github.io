@@ -156,3 +156,19 @@ function setUserProperty(name, value) {
     // alert("No setUserProperty APIs found.");
   }
 }
+
+function deeplink(target) {
+  var params = {
+    url: target
+  }
+  if (isAndroid() && !!window.bomapp.deeplink) {
+    // Call Android interface
+    window.bomapp.deeplink(JSON.stringify(params));
+  } else if (isIOS() && !!window.webkit.messageHandlers.deeplink) {
+    // Call iOS interface
+    window.webkit.messageHandlers.deeplink.postMessage(params);
+  } else {
+    // No Android or iOS interface found
+    // alert("No deeplink APIs found.");
+  }
+}
