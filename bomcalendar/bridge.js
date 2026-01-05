@@ -158,14 +158,14 @@ function setUserProperty(name, value) {
 }
 
 function deeplink(target) {
-  var params = {
-    url: target
-  }
   if (isAndroid() && !!window.bomapp.deeplink) {
     // Call Android interface
-    window.bomapp.deeplink(JSON.stringify(params));
+    window.bomapp.deeplink(target);
   } else if (isIOS() && !!window.webkit.messageHandlers.deeplink) {
     // Call iOS interface
+    var params = {
+      targets: target
+    }
     window.webkit.messageHandlers.deeplink.postMessage(params);
   } else {
     // No Android or iOS interface found
