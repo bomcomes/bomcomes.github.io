@@ -57,7 +57,7 @@ function closeWebView() {
 function goBack() {
   if (isAndroid() && !!window.bomapp.goBack) {
     // Call Android interface
-    window.bomapp.closeWebView(JSON.stringify(''));
+    window.bomapp.goBack(JSON.stringify(''));
   } else if (isIOS() && !!window.webkit.messageHandlers.goBack) {
     // Call iOS interface
     window.webkit.messageHandlers.goBack.postMessage('');
@@ -154,5 +154,21 @@ function setUserProperty(name, value) {
   } else {
     // No Android or iOS interface found
     // alert("No setUserProperty APIs found.");
+  }
+}
+
+function deeplink(target) {
+  if (isAndroid() && !!window.bomapp.deeplink) {
+    // Call Android interface
+    window.bomapp.deeplink(target);
+  } else if (isIOS() && !!window.webkit.messageHandlers.deeplink) {
+    // Call iOS interface
+    var params = {
+      targets: target
+    }
+    window.webkit.messageHandlers.deeplink.postMessage(params);
+  } else {
+    // No Android or iOS interface found
+    // alert("No deeplink APIs found.");
   }
 }

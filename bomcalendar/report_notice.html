@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=no" />
   
   <meta name="color-scheme" content="light">
@@ -17,11 +17,47 @@
       color-scheme: light;
     }
     body {
-      background-color: #ffffff; /* 앱 배경색에 맞춰 수정 */
+      background-color: #ffffff;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 44px;
+      padding-top: env(safe-area-inset-top);
+      background-color: #ffffff;
+      display: flex;
+      align-items: flex-end;
+      z-index: 100;
+    }
+    .btn-back {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .content {
+      padding-top: calc(44px + env(safe-area-inset-top));
+    }
+    #bottomButton {
+      padding-bottom: env(safe-area-inset-bottom);
+      background-color: #ffffff;
     }
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <button class="btn-back" onclick="goBack()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M15 19l-7-7 7-7" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </nav>
   <div class="wrap">
     <div class="container">
       <div class="content" id="content">
@@ -29,8 +65,8 @@
         <div class="fullimg">
           <img src="img/guide/report/image_report.png" alt="리포트 상세 가이드 내용">
         </div>
-    <div class="fullimg">
-          <a href="여기에_이동할_주소를_입력하세요">
+    <div class="fullimg" id="bottomButton" style="display: none; position: fixed; bottom: 0; left: 0; right: 0;">
+          <a href="javascript:void(0);" onclick="deeplink('view:report_pdf')">
             <img src="img/guide/report/button_area.png" alt="가이드 확인 및 이동 버튼">
           </a>
         </div>
@@ -42,6 +78,12 @@
   <script>
     window.onload = function() {
       screenEvent('scr_webview_report_notice');
+
+      const params = new URLSearchParams(window.location.search);
+
+      if (params.get('bottomBtn') === 'true') {
+        document.getElementById('bottomButton').style.display = 'block';
+      }
     }
   </script>
 </body>
