@@ -83,6 +83,7 @@
 
       if (params.get('bottomBtn') === 'true') {
         document.getElementById('bottomButton').style.display = 'block';
+        document.getElementById('content').style.paddingBottom = 'calc(92px + env(safe-area-inset-bottom))';
       }
     }
   </script>
