@@ -472,7 +472,7 @@ a .btn_box{color: #000000;}
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 0px 16px 16px 16px;
+  padding: 0 16px calc(16px + var(--safe-area-bottom, 0px)) 16px;
   background-color: #ffffff;
 }
 .bottom-fixed-btn::before {
