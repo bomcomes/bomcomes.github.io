@@ -46,11 +46,7 @@
     .content {
       padding-top: calc(44px + var(--safe-area-top));
     }
-    #bottomButton {
-      padding-bottom: var(--safe-area-bottom);
-      background-color: #ffffff;
-    }
-  </style>
+      </style>
   <script>
     // 안드로이드에서는 safe-area 사용 안함
     if (/Android/i.test(navigator.userAgent)) {
@@ -74,8 +70,8 @@
         <div class="fullimg">
           <img src="img/guide/report/image_report.png" alt="리포트 상세 가이드 내용">
         </div>
-    <div id="bottomButton" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 16px;">
-          <a href="javascript:void(0);" onclick="deeplink('replace:report_pdf')" style="display: block; height: 60px; line-height: 60px; background-color: #5752E3; border-radius: 16px; text-align: center; color: #FFFFFF; font-size: 16px; font-weight: 600;">
+    <div id="bottomButton" class="bottom-fixed-btn">
+          <a href="javascript:void(0);" onclick="deeplink('replace:report_pdf')" class="btn-primary">
             리포트 다운로드 시작하기
           </a>
         </div>
@@ -92,7 +88,7 @@
 
       if (params.get('bottomBtn') === 'true') {
         document.getElementById('bottomButton').style.display = 'block';
-        document.getElementById('content').style.paddingBottom = 'calc(92px + var(--safe-area-bottom))';
+        document.getElementById('content').style.paddingBottom = 'calc(76px + var(--safe-area-bottom))';
       }
     }
   </script>
