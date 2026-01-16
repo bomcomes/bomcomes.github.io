@@ -69,7 +69,7 @@
           <img src="img/guide/report/image_report.png" alt="리포트 상세 가이드 내용">
         </div>
     <div id="bottomButton" class="bottom-fixed-btn">
-          <a href="javascript:void(0);" onclick="deeplink('replace:report_pdf')" class="btn-primary">
+          <a href="javascript:void(0);" onclick="onClickDownloadButton()" class="btn-primary">
             리포트 다운로드 시작하기
           </a>
         </div>
@@ -80,14 +80,20 @@
   <script type="text/javascript" src="bridge.js"></script>
   <script>
     window.onload = function() {
-      screenEvent('scr_webview_report_notice');
-
       const params = new URLSearchParams(window.location.search);
 
       if (params.get('bottomBtn') === 'true') {
+        screenEvent('scr_webview_report_notice_bottom_btn');
         document.getElementById('bottomButton').style.display = 'block';
         document.getElementById('content').style.paddingBottom = 'calc(76px + var(--safe-area-bottom))';
+      } else {
+        screenEvent('scr_webview_report_notice');
       }
+    }
+
+    function onClickDownloadButton() {
+      logEvent('btn_webview_report_notice_start');
+      deeplink('replace:report_pdf');
     }
   </script>
 </body>
