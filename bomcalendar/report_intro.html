@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="format-detection" content="telephone=no" />
-
+  
   <meta name="color-scheme" content="light">
   <meta name="supported-color-schemes" content="light">
 
   <title>bomcomes</title>
-  <link rel="stylesheet" href="../css/style.css">
-
+  <link rel="stylesheet" href="./css/style.css">
+  
   <style>
     /* CSS 수준에서 라이트 모드 강제 */
     :root {
@@ -46,7 +46,7 @@
     .content {
       padding-top: calc(44px + var(--safe-area-top));
     }
-  </style>
+      </style>
   <script>
     // 안드로이드에서는 safe-area 사용 안함
     if (/Android/i.test(navigator.userAgent)) {
@@ -58,41 +58,41 @@
 <body>
   <nav class="navbar">
     <button class="btn-back" onclick="goBack()">
-      <img src="../img/icon/icon_navbar_back_18.svg" alt="Back" width="18" height="18">
+      <img src="img/icon/icon_navbar_back_18.svg" alt="뒤로가기" width="18" height="18">
     </button>
   </nav>
   <div class="wrap">
     <div class="container">
       <div class="content" id="content">
-
+        
         <div class="fullimg">
-          <img src="img/guide/report/image_report.png" alt="Report detail guide content">
+          <img src="img/guide/report/image_report.png" alt="리포트 상세 가이드 내용">
         </div>
     <div id="bottomButton" class="bottom-fixed-btn">
           <a href="javascript:void(0);" onclick="onClickDownloadButton()" class="btn-primary">
-            Start Report Download
+            리포트 다운로드 시작하기
           </a>
         </div>
 
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="../bridge.js"></script>
+  <script type="text/javascript" src="bridge.js"></script>
   <script>
     window.onload = function() {
       const params = new URLSearchParams(window.location.search);
 
       if (params.get('bottomBtn') === 'true') {
-        screenEvent('scr_webview_report_notice_en_bottom_btn');
+        screenEvent('scr_webview_report_intro_bottom_btn');
         document.getElementById('bottomButton').style.display = 'block';
         document.getElementById('content').style.paddingBottom = 'calc(76px + var(--safe-area-bottom))';
       } else {
-        screenEvent('scr_webview_report_notice_en');
+        screenEvent('scr_webview_report_intro');
       }
     }
 
     function onClickDownloadButton() {
-      logEvent('btn_webview_report_notice_en_start');
+      logEvent('btn_webview_report_intro_start');
       deeplink('replace:report_pdf');
     }
   </script>
