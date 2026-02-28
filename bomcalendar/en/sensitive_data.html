@@ -1,52 +1,44 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
 <meta name="format-detection" content="telephone=no" />
-<title>bomcoms</title>
+<title>Bomcomes - Consent to Sensitive Information</title>
 <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-<!-- .wrap -->
 <div class="wrap"> 
-  <!-- .container -->
   <div class="container"> 
-    <!-- .content -->
     <div class="content" id="content">
       <div class="agree-wrap"> 
-        <p class="text01 mrt6">BomComes ("the Company"), the operator of the Bom Calendar Service ("the Service"), is committed to fulfilling the responsibilities and obligations defined in the Personal Information Protection Act.
-Your consent is required for the collection and use of personal information as follows:<br></p>
-        <!-- 01 -->
+        <p class="text01 mrt6">Bomcomes (hereinafter referred to as the “Company”), which operates the **Bom Calendar** service (hereinafter referred to as the “Service”), strives to fulfill the responsibilities and obligations prescribed by the Personal Information Protection Act. Your consent is required regarding the following matters for the collection and use of personal information : **Collection and Use of Sensitive Information**.</p>
+        
         <h2>Purpose of Collection</h2>
-        <p class="text01 mrt6">To automatically calculate the user's period cycle and provid body condition and mood information based on menstrual data.</p>
-        <!-- 02 -->
+        <p class="text01 mrt6">- Automatic calculation of the user's menstrual cycle and provision of information on physical condition and mood based on the cycle.</p>
+        <p class="text01 mrt6">- Information sharing between members through community features and management of posts (display and retention of posts directly published by the user).</p>
+        
         <h2>Items Collected</h2>
-        <p class="text01 mrt6">Start date, end date of period, birth control pill intake, medication intake, days of intimacy, ovulation, height, weight, menstrual bleeding, symptoms, body temperature, ovulation test results, cervical mucus, expected date of childbirth, pregnancy status.</p>
-        <!-- 03 -->
+        <p class="text01 mrt6">- Period start and end dates, Contraceptive use, Medication intake, Sexual activity, Ovulation, Height, Weight, Menstrual flow, Symptoms, Body temperature, Ovulation test results, Cervical mucus status, Expected date of birth, Pregnancy status.</p>
+        <p class="text01 mrt6">- Information voluntarily provided by the user in posts and comments when using community services (physical symptoms, health status, etc.).</p>
+        
         <h2>Retention Period</h2>
-		<p class="text01 mrt6">Until membership withdrawal.</p>
-		<br>
-        <p class="text01 mrt6">Consent is mandatory as without it, you will not be able to smoothly use services such as menstrual cycle calculation, provision of body and mood information, and sharing records. For more details, please refer to the Privacy Policy.&nbsp;</p>
-</div>
+        <p class="text01 mrt6">- Until membership withdrawal.</p>
+        
+        <br>
+        <p class="text01 mrt6">If consent is not provided, you may not be able to smoothly use services such as menstrual cycle calculation, physical condition and mood information, and record sharing. Therefore, this information requires mandatory consent.</p>
+        <p class="text01 mrt6">For more details, please refer to the Privacy Policy.</p>
+      </div>
     </div>
-    <!-- //.content --> 
+    </div>
   </div>
-  <!-- //.container --> 
-</div>
-<!-- //.wrap --> 
-<!-- .popup-page --> 
-<!-- <div class="popup-page">
-</div> --> 
-<!-- // .popup-page -->
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
   function eventClick(title, target, name){
     logEvent(name);
     openNewWebViewWithPath(title,target);
   }
-		
+        
   window.onload = function(){
     screenEvent('scr_webview_sencitive_privacy');
   }
