@@ -5,7 +5,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
 <meta name="format-detection" content="telephone=no" />
 <title>봄 캘린더 이용약관</title>
-<link rel="stylesheet" href="./css/style.css">
+<style>
+@charset "UTF-8";
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NanumSquareL.eot");
+  src: url("../fonts/NanumSquareL.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareL.woff") format("woff");
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NanumSquareR.eot");
+  src: url("../fonts/NanumSquareR.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareR.woff") format("woff");
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NanumSquareB.eot");
+  src: url("../fonts/NanumSquareB.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff") format("woff");
+}
+
+/* reset & base */
+html, body, form, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fieldset, th, td, button { margin: 0; padding: 0; border: 0; font: inherit; }
+html, body { height: 100%; font-size: 10px; }
+body {
+  background-color: #fff;
+  -webkit-text-size-adjust: none;
+  font-family: 'NanumSquare', 'Apple SD Gothic Neo', 'AppleGothic', 'Apple Gothic', '-apple-system', Sans-serif;
+  font-weight: 400;
+  color: #323232;
+  word-break: keep-all;
+}
+a, a:active, a:hover { text-decoration: none; color: inherit; font-weight: 400; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+/* layout & typography */
+.agree-wrap { padding: 30px 16px 50px; }
+.agree-wrap h2 { font-size: 18px; font-weight: 700; line-height: 1.38; color: #000; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.agree-wrap h3 { font-size: 16px; font-weight: 700; line-height: 1.38; color: #000; margin-top: 24px; }
+.text01 { font-size: 13px; line-height: 1.46; color: #000; word-break: break-all; }
+.mrt8 { margin-top: 8px; }
+.mrt10 { margin-top: 10px; }
+.mrt12 { margin-top: 12px; }
+
+/* gray box */
+.gray-box { padding: 14px; border-radius: 8px; background-color: #f8f8f8; }
+
+/* table */
+.table-wrap { margin-top: 12px; }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; line-height: 1.5; color: #333; }
+.table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; word-break: break-all; }
+.table thead td { background-color: #f9f9f9; font-weight: bold; color: #000; text-align: center; }
+
+/* button (좌측 정렬 및 텍스트 크기에 맞춤) */
+.btn_box {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+  font-size: 12px;
+  box-sizing: border-box;
+  transition: background 0.2s;
+}
+.btn_box:hover, .btn_box:active { background: #eee; }
+.btn_box strong { font-weight: 400; }
+</style>
 </head>
 
 <body>
@@ -243,7 +313,7 @@
         <br>
         <p class="mrt12">
           <a href="terms_history/terms_20221230.html" target="_self">
-            <span class="btn_box"><strong>변경 전 이용약관 보기 (2022년 12월 30일 시행)</strong></span>
+          <span class="btn_box"><strong>변경 전 이용약관 보기 (2022년 12월 30일 시행)</strong></span>
           </a>
         </p>	  
       </div>
@@ -253,9 +323,9 @@
 
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
-    window.onload = function(){
-        screenEvent('scr_webview_terms');
-    }
+  window.onload = function() {
+    screenEvent('scr_webview_terms');
+  }
 </script>
 </body>
 </html>

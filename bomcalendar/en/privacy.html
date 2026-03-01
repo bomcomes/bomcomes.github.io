@@ -5,16 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
 <meta name="format-detection" content="telephone=no" />
 <title>Bom Calendar Privacy Policy</title>
-<link rel="stylesheet" href="../css/style_en.css">
 <style>
-    /* 표 디자인 및 레이아웃 스타일 */
-    .policy-table { width : 100%; border-collapse : collapse; margin : 15px 0; font-size : 13px; line-height : 1.5; color : #333; }
-    .policy-table th, .policy-table td { border : 1px solid #ddd; padding : 10px; text-align : left; vertical-align : top; }
-    .policy-table th { background-color : #f9f9f9; font-weight : bold; color : #000; text-align : center; }
-    .policy-table td { word-break : keep-all; }
-    .mrt8 { margin-top : 8px; }
-    .mrt12 { margin-top : 12px; }
-    .btn_box { display : inline-block; padding : 10px; background : #f1f1f1; border : 1px solid #ddd; color : #333; text-decoration : none; margin-top : 20px; font-size : 13px; }
+@charset "UTF-8";
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NanumSquareL.eot");
+  src: url("../fonts/NanumSquareL.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareL.woff") format("woff");
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NanumSquareR.eot");
+  src: url("../fonts/NanumSquareR.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareR.woff") format("woff");
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NanumSquareB.eot");
+  src: url("../fonts/NanumSquareB.ttf?#iefix") format("embedded-opentype"), url("../fonts/NanumSquareB.woff") format("woff");
+}
+
+/* reset & base */
+html, body, form, div, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fieldset, th, td, button { margin: 0; padding: 0; border: 0; font: inherit; }
+ul, ol, li { list-style: none; } /* 브라우저 기본 블릿 제거 */
+html, body { height: 100%; font-size: 10px; }
+body {
+  background-color: #fff;
+  -webkit-text-size-adjust: none;
+  font-family: 'NanumSquare', 'Apple SD Gothic Neo', 'AppleGothic', 'Apple Gothic', '-apple-system', Sans-serif;
+  font-weight: 400;
+  color: #323232;
+  word-break: keep-all;
+}
+a, a:active, a:hover { text-decoration: none; color: inherit; font-weight: 400; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+/* layout & typography */
+.agree-wrap { padding: 30px 16px 50px; }
+.agree-wrap h2 { font-size: 18px; font-weight: 700; line-height: 1.38; color: #000; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.agree-wrap h3 { font-size: 16px; font-weight: 700; line-height: 1.38; color: #000; margin-top: 24px; }
+.text01 { font-size: 13px; line-height: 1.46; color: #000; word-break: break-all; }
+.text01 li { margin-top: 4px; } /* 리스트 항목 간격 조정 */
+.mrt8 { margin-top: 8px; }
+.mrt12 { margin-top: 12px; }
+
+/* table (영문 페이지 클래스용) */
+.policy-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; line-height: 1.5; color: #333; }
+.policy-table th, .policy-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; word-break: keep-all; }
+.policy-table th { background-color: #f9f9f9; font-weight: bold; color: #000; text-align: center; }
+
+/* button (좌측 정렬 및 텍스트 크기에 맞춤) */
+.btn_box {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #333;
+  font-size: 12px;
+  box-sizing: border-box;
+  transition: background 0.2s;
+}
+.btn_box:hover, .btn_box:active { background: #eee; }
+.btn_box strong { font-weight: 400; }
 </style>
 </head>
 
@@ -255,9 +312,9 @@
 </div>
 <script type="text/javascript" src="bridge.js"></script> 
 <script>
-    window.onload = function(){
-        screenEvent('scr_webview_privacy');
-    }
+  window.onload = function() {
+    screenEvent('scr_webview_privacy');
+  }
 </script>
 </body>
 </html>
