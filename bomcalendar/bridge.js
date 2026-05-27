@@ -99,12 +99,15 @@ function outlink(target) {
   }
 }
 
-function screenEvent(name) {
+function screenEvent(name, parameters) {
   if (!name) {
     return;
   }
   var message = {
     name: name
+  }
+  if (parameters) {
+    message.parameters = parameters;
   }
   if (isAndroid()) {
     // Call Android interface

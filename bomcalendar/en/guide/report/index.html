@@ -77,22 +77,20 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="../../../bridge.js"></script>
+  <script type="text/javascript" src="/bomcalendar/bridge.js"></script>
   <script>
     window.onload = function() {
       const params = new URLSearchParams(window.location.search);
-
-      if (params.get('bottomBtn') === 'true') {
-        screenEvent('scr_webview_guide_report_bottom_btn');
+      const hasBottomBtn = params.get('bottomBtn') === 'true';
+      screenEvent('scr_guide_report', { bottom_btn: hasBottomBtn ? 'true' : 'false' });
+      if (hasBottomBtn) {
         document.getElementById('bottomButton').style.display = 'block';
         document.getElementById('content').style.paddingBottom = 'calc(76px + var(--safe-area-bottom))';
-      } else {
-        screenEvent('scr_webview_guide_report');
       }
     }
 
     function onClickDownloadButton() {
-      logEvent('btn_webview_guide_report_start');
+      logEvent('btn_guide_report_start');
       deeplink('replace:report_pdf');
     }
   </script>
