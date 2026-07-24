@@ -57,6 +57,8 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 .policy-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; line-height: 1.5; color: #333; }
 .policy-table th, .policy-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; word-break: keep-all; }
 .policy-table th { background-color: #f9f9f9; font-weight: bold; color: #000; text-align: center; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.wide-policy-table { min-width: 960px; }
 
 /* button (좌측 정렬 및 텍스트 크기에 맞춤) */
 .btn_box {
@@ -97,6 +99,7 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
           <li>③ Restrictions against members who violate laws and terms of use, prevention and sanctions against acts that interfere with the smooth operation of the service including unauthorized use, account theft and fraudulent transaction prevention, preservation of records for dispute resolution, and other user protection and service operation.</li>
           <li>④ New service development and customized service provision, service provision and advertising based on demographic characteristics, analysis of service usage records, and other service improvement.</li>
           <li>⑤ Providing event information and participation opportunities, providing advertising information, and other marketing and promotion (Only for information subjects who have consented. You may refuse consent; however, please be informed that you may not receive information about new services or events.)</li>
+          <li>⑥ Processing Bom Points earning and use, voucher issuance and use, verifying point credits after rewarded-ad completion, and preventing duplicate or fraudulent crediting.</li>
         </ul>
         <p class="text01 mrt8">※ When using the community service, information generated from activities such as writing posts and comments is used for providing community functions, communication between users, and operational management.</p>
 
@@ -154,8 +157,8 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
             </tr>
             <tr>
               <td>Bom Points (Benefits) service</td>
-              <td>[Required when using Bom Points] Point earning and usage history, voucher issuance and usage history, rewarded advertisement completion verification information (ad transaction identifier)</td>
-              <td>Deleted immediately upon membership withdrawal</td>
+              <td>[Required when using Bom Points] Point earning and usage history, voucher issuance and usage history, rewarded advertisement completion verification information (ad transaction identifier and internal member identifier)</td>
+              <td>Destroyed without delay when membership withdrawal is processed</td>
             </tr>
             <tr>
               <td>Customer Support &amp; Feedback</td>
@@ -173,12 +176,13 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
         <h3>B. Methods of Collection</h3>
         <p class="text01 mrt12">The Company collects personal information through the following methods and does not disclose it without prior consent :</p>
         <p class="text01 mrt8">- Through the use of 'Bom Calendar' services, event entries, etc.</p>
+        <p class="text01 mrt8">- Through Google AdMob server-side verification (SSV) callbacks that confirm rewarded-ad completion.</p>
 
         <h2>04. Retention and Usage Period of Personal Information</h2>
         <p class="text01 mrt12">The Company retains personal information during the period the information subject uses the services provided by the Company, until membership withdrawal is requested or consent is withdrawn.</p>
         <p class="text01 mrt8">However, if a member directly requests withdrawal according to the procedures in Section 06, the data will be completely deleted from the disk using non-reproducible methods, making it impossible to access or use in the future. (Posts and comments created through the community feature are stored separately from personal information and may remain within the service even after withdrawal.)</p>
         <p class="text01 mrt8">Personal information collected for temporary purposes (surveys, events, identity verification, etc.) will be processed in the same way so that it cannot be reproduced once the purpose is achieved.</p>
-        <p class="text01 mrt8">Additionally, if retention is required by relevant laws such as the "Commercial Act" or the "Act on Consumer Protection in Electronic Commerce," the Company will store the information for the period prescribed by law as follows :</p>
+        <p class="text01 mrt8">Additionally, if retention is required by relevant laws such as the "Commercial Act" or the "Act on Consumer Protection in Electronic Commerce," the Company will store paid transaction records separately from general member and Bom Points records, use them only for the statutory retention purpose, and retain them for the following periods :</p>
 
         <table class="policy-table">
           <thead>
@@ -206,19 +210,19 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
               <td>Records on payment and supply of goods</td>
               <td>Records on payment and supply</td>
               <td>Act on Consumer Protection in Electronic Commerce</td>
-              <td>5 years or more</td>
+              <td>5 years</td>
             </tr>
             <tr>
               <td>Records on contract or withdrawal of subscription</td>
               <td>Consumer identification, Contract records</td>
               <td>Act on Consumer Protection in Electronic Commerce</td>
-              <td>5 years or more</td>
+              <td>5 years</td>
             </tr>
             <tr>
               <td>Records on customer complaints or dispute resolution</td>
               <td>Consumer identification, Dispute records</td>
               <td>Act on Consumer Protection in Electronic Commerce</td>
-              <td>5 years or more</td>
+              <td>3 years</td>
             </tr>
             <tr>
               <td>Preservation of community content &amp; Service operation</td>
@@ -277,17 +281,42 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 
         <h3>B. Behavioral and Marketing Analysis</h3>
         <p class="text01 mrt12">'Bom Calendar' may collect the user's ADID/IDFA for customized services and advertising measurements. You can opt-out in your device settings (Android : Google > Ads / iOS : Privacy > Apple Advertising).</p>
-        <p class="text01 mrt8">The Company serves in-app advertisements (banner, interstitial, and rewarded ads) through Google AdMob. When a user watches a rewarded advertisement to earn Bom Points, the Company receives and processes advertisement completion verification information (ad transaction identifier and member identifier) from Google in order to confirm whether the reward (Points) should be granted. This information is used solely for preventing duplicate reward grants and fraudulent earning. For details on Google's processing of personal information, please refer to Google's Privacy Policy (https://policies.google.com/privacy).</p>
+        <p class="text01 mrt8">The Company serves in-app advertisements (banner, interstitial, and rewarded ads) through Google AdMob. When a user watches a rewarded advertisement to earn Bom Points, the Company sends an internal member identifier to Google AdMob to identify the member who should receive the Points. After the advertisement is completed, Google AdMob sends the ad transaction identifier and internal member identifier to the Company's server, and the Company uses them to verify whether the Points should be credited. This information is used to credit Points and prevent duplicate or fraudulent crediting. For details on Google's processing of personal information, please refer to the <a href="https://policies.google.com/privacy?hl=en-US" target="_blank">Google Privacy Policy</a>.</p>
 
         <h2>08. Destruction Procedures and Methods</h2>
-        <p class="text01 mrt12">Personal information is destroyed immediately after the purpose is achieved. However, records of fraudulent use are kept for up to 1 year for prevention purposes.</p>
+        <p class="text01 mrt12">The Company destroys personal information without delay when its processing purpose is achieved or membership withdrawal is completed. Bom Points balances, earning and usage history, vouchers, and rewarded-ad completion verification information are also destroyed when membership withdrawal is processed. Community content may be retained after identifiable information is removed. Paid transaction records required by law are stored separately from other member information for the statutory period and destroyed when that period expires.</p>
         <p class="text01 mrt8">Electronic files are deleted using technical methods that prevent restoration, and paper documents are shredded or incinerated.</p>
 
         <h2>09. Technical and Administrative Protection Measures</h2>
         <p class="text01 mrt12">The Company implements security measures to prevent loss, theft, leakage, or alteration of personal information, including internal management plans, access controls, and encryption of personal information.</p>
 
-        <h2>10. Entrustment of Personal Information</h2>
-        <p class="text01 mrt12">Currently, there are no items for the entrustment of personal information to external parties.</p>
+        <h2>10. Entrustment and Overseas Transfer of Personal Information</h2>
+        <p class="text01 mrt12">The Company uses Google AdMob to serve advertisements and verify Bom Points credits. Personal information required for these services may be transferred overseas as follows :</p>
+        <div class="table-scroll">
+          <table class="policy-table wide-policy-table">
+            <thead>
+              <tr>
+                <th>Recipient</th>
+                <th>Country</th>
+                <th>Items Transferred</th>
+                <th>Purpose</th>
+                <th>Timing and Method</th>
+                <th>Retention Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google LLC<br>googlekrsupport@google.com</td>
+                <td>United States and <a href="https://www.google.com/about/datacenters/locations/" target="_blank">countries where Google data centers are located</a></td>
+                <td>Internal member identifier and ad transaction identifier</td>
+                <td>Google AdMob rewarded-ad completion and point credit verification, and prevention of duplicate or fraudulent crediting</td>
+                <td>Transferred over an encrypted network when a rewarded ad is requested and completed</td>
+                <td>As specified in Google's Privacy Policy and service policies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text01 mrt8">The legal basis for the overseas transfer is Article 28-8 (1) 3 of the Personal Information Protection Act of Korea (processing entrustment or storage necessary to enter into or perform a contract with the information subject). Users may refuse the transfer of the Bom Points credit verification information above by not watching rewarded ads. In that case, earning Bom Points through those ads will be unavailable, but other services remain available. Personalized advertising can be disabled in the device settings.</p>
 
         <h2>11. Feedback and Grievance Handling</h2>
         <p class="text01 mrt12">The Company has established all procedures for handling complaints. If you are not satisfied with the Company's grievance handling, please contact the following agencies :</p>
@@ -309,7 +338,7 @@ table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 
         <h2>15. Duty of Notification</h2>
         <p class="text01 mrt12">Announcement Date : July 20, 2026 / Effective Date : August 4, 2026</p>
-        <p class="text01 mrt8">※ Main changes in this revision: addition of processing items for the Bom Points (Benefits) service (Section 03) and addition of provisions on the processing of rewarded advertisement completion verification information (Section 07).</p>
+        <p class="text01 mrt8">※ Main changes in this revision: clarification of the purposes, items, and collection methods for Bom Points (Sections 02 and 03); revision of statutory retention periods and destruction upon membership withdrawal (Sections 04 and 08); and clarification of the rewarded-ad and point credit verification flow and overseas transfer through Google AdMob (Sections 07 and 10).</p>
 
         <br>
         <a href="privacy_history/privacy_20260401.html" target="_self"><span class="btn_box">Previous policy document (Enforced on Apr 01, 2026)</span></a>
