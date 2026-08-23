@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "name": "Bom Calendar Typography Tokens",
+    "source": "Figma style guide",
+    "extractedAt": "2026-08-23",
+    "format": "DTCG-inspired JSON",
+    "notes": [
+      "Font sizes and absolute line heights use px units.",
+      "Percentage letter spacing and line height values are preserved from Figma."
+    ]
+  },
+  "font-family": {
+    "$type": "fontFamily",
+    "kr": { "$value": ["Pretendard", "sans-serif"] },
+    "en": { "$value": ["Pretendard", "sans-serif"] }
+  },
+  "font-weight": {
+    "$type": "fontWeight",
+    "regular": { "$value": 400 },
+    "semibold": { "$value": 600 },
+    "bold": { "$value": 700 },
+    "extrabold": { "$value": 800 },
+    "black": { "$value": 900 }
+  },
+  "text-style": {
+    "$type": "typography",
+    "head": {
+      "7": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "40px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "6": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "32px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "5": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "28px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "4": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "26px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "24px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "22px", "lineHeight": "140%", "letterSpacing": "-1%" } },
+      "1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "20px", "lineHeight": "140%", "letterSpacing": "-1%" } }
+    },
+    "subhead": {
+      "3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.semibold}", "fontSize": "18px", "lineHeight": "140%", "letterSpacing": "-2%" } },
+      "2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.semibold}", "fontSize": "16px", "lineHeight": "140%", "letterSpacing": "-2%" } },
+      "1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.semibold}", "fontSize": "14px", "lineHeight": "140%", "letterSpacing": "0%" } }
+    },
+    "body": {
+      "3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "18px", "lineHeight": "26px", "letterSpacing": "-1px" } },
+      "2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "16px", "lineHeight": "140%", "letterSpacing": "-1%" }, "$description": "본문 텍스트" },
+      "1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "14px", "lineHeight": "140%", "letterSpacing": "-2%" } }
+    },
+    "button": {
+      "4": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "18px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "16px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "16px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "5": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "14px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "line": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "14px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "12px", "lineHeight": "100%", "letterSpacing": "0%" } }
+    },
+    "caption": {
+      "3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "12px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "12px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "4": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "10px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "9px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "bullet-list": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "12px", "lineHeight": "140%", "letterSpacing": "0%" } }
+    },
+    "etc": {
+      "dashboard": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "44px", "lineHeight": "100%", "letterSpacing": "-1px" } },
+      "unicode-icon": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "32px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "mood-title": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "13px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "mood-body": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "13px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "strikeout": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "14px", "lineHeight": "140%", "letterSpacing": "0px" } },
+      "badge": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "10px", "lineHeight": "100%", "letterSpacing": "0px" } },
+      "count-small": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "7px", "lineHeight": "100%", "letterSpacing": "0px" } },
+      "day-num": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "12px", "lineHeight": "100%", "letterSpacing": "0px" } }
+    },
+    "guide": {
+      "head3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.black}", "fontSize": "80px", "lineHeight": "normal", "letterSpacing": "-1px" } },
+      "head2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.extrabold}", "fontSize": "75px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "head1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.extrabold}", "fontSize": "56px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "subtitle": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "42px", "lineHeight": "normal", "letterSpacing": "-1%" } },
+      "body3": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "28px", "lineHeight": "normal", "letterSpacing": "-0.6px" } },
+      "section": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.bold}", "fontSize": "24px", "lineHeight": "normal", "letterSpacing": "-1%" } },
+      "body2": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "24px", "lineHeight": "100%", "letterSpacing": "0%" } },
+      "body1": { "$value": { "fontFamily": "{font-family.kr}", "fontWeight": "{font-weight.regular}", "fontSize": "16px", "lineHeight": "normal", "letterSpacing": "0%" } }
+    }
+  }
+}
