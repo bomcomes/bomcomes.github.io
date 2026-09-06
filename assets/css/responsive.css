@@ -231,7 +231,7 @@
 	margin-bottom: 34px;
 }
 .download-area {
-	background-image: url(../img/download.png);
+	background-image: url(../img/download.png?v=20260906-10);
 	background-repeat: no-repeat;
 	background-position: -19px 290px;
 	background-size: 122% auto;
@@ -463,7 +463,7 @@
 }
 .icon.icon_mau{width: 51px; height: auto;}	
 .download-area {
-	background-image: url( ../img/download_mobile_new.png);
+	background-image: url( ../img/download_mobile_new.png?v=20260906-5);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: 70% auto;
